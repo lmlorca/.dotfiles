@@ -1,0 +1,4 @@
+configuration {
+ theme: "fullscreen";
+ font: "Noto Sans Regular 14";
+}
