@@ -53,7 +53,7 @@ for_window [class="^.*"] border pixel 2
 for_window [class="^.*"] title_format "<span font='9'>  %title</span>"
 
 # Gaps
-gaps inner 20
+gaps inner 10
 gaps outer 0
 #smart_gaps on
 #smart_borders on
