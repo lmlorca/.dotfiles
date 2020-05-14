@@ -1,4 +1,6 @@
 configuration {
- theme: "fullscreen";
+ modi: "drun";
+ theme: "~/.cache/wal/colors-rofi-dark";
  font: "Noto Sans Regular 14";
+ show-icons: true;
 }

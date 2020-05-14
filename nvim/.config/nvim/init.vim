@@ -60,6 +60,7 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 
 Plug 'pangloss/vim-javascript'
+Plug 'ap/vim-css-color'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 Plug 'vim-airline/vim-airline'
@@ -67,6 +68,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'kaicataldo/material.vim'
+Plug 'deviantfero/wpgtk.vim'
 
 call plug#end()
 
@@ -262,7 +264,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "map <leader>f :Prettier<CR>
 
 " Airline Theme
-let g:airline_theme = 'base16_vim'
+let g:airline_theme = 'wpgtk_alternate'
 let g:airline_powerline_fonts = 0
 let g:airline_statusline_ontop = 0
 
@@ -273,14 +275,14 @@ let g:airline_statusline_ontop = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " True Color Support
-if (has("termguicolors"))
-  set termguicolors
-endif
+" if (has("termguicolors"))
+  " set termguicolors
+" endif
 
 " Material Theme
-let g:material_terminal_italics = 1
-let g:material_theme_style = 'darker'
-colorscheme material
+" let g:material_terminal_italics = 1
+" let g:material_theme_style = 'darker'
+colorscheme wpgtkAlt
 
 " Remove blank line tildes
 set fcs=eob:\ 
