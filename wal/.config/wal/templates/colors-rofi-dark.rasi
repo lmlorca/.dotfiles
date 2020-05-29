@@ -13,9 +13,9 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #{color11.strip}B3;
+    selected-active-background: #{color9.strip}B3;
     selected-active-foreground: @foreground;
-    selected-normal-background: #{color11.strip}B3;
+    selected-normal-background: #{color9.strip}B3;
     selected-normal-foreground: @foreground;
     selected-urgent-background: {color3};
     selected-urgent-foreground: @foreground;
@@ -31,7 +31,7 @@
     background-color: @background;
     border: 0;
     padding: 20ch 40ch; 
-    margin: 25px 0 0 0;
+    margin: 0 0 0 0;
     width: 100%;
     height: 100%;
 }}

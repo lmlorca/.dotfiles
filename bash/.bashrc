@@ -8,9 +8,11 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+(cat $HOME/.config/wpg/sequences &)
+
 alias vim='nvim'
 alias vi='nvim'
 
+unimatrix -a -s 100 -w
 neofetch
 
-(cat $HOME/.config/wpg/sequences &)

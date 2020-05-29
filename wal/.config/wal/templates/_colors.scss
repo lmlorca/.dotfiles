@@ -50,7 +50,7 @@ $on-colors: (
     entry-fill: rgba(black, .04)
   ),
   light: (
-    primary: {color11},
+    primary: {color9},
     error: #f28b82,
     text: white,
     text2: rgba(white, .7),
@@ -82,10 +82,10 @@ $on-colors: (
 
 // Private variables for dark background colors
 $-dark-background:                       {color0};
-$-dark-surface-1dp:                      mix(white, $-dark-background, 2.5%);
-$-dark-surface-4dp:                      mix(white, $-dark-background, 4.5%);
-$-dark-surface-8dp:                      mix(white, $-dark-background, 6%);
-$-dark-surface-switch:                   mix(white, $-dark-background, 30%);
+$-dark-surface-1dp:                      mix(white, $-dark-background, 5%);
+$-dark-surface-4dp:                      mix(white, $-dark-background, 9%);
+$-dark-surface-8dp:                      mix(white, $-dark-background, 12%);
+$-dark-surface-switch:                   mix(white, $-dark-background, 60%);
 
 //
 // Main colors

@@ -39,7 +39,8 @@ set mouse=a
 " Hide default status bar
 set noshowmode
 
-
+" Use system clipboard by default
+set clipboard+=unnamedplus
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
@@ -264,8 +265,8 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "map <leader>f :Prettier<CR>
 
 " Airline Theme
-let g:airline_theme = 'wpgtk_alternate'
-let g:airline_powerline_fonts = 0
+let g:airline_theme = 'wpgtk'
+let g:airline_powerline_fonts = 1
 let g:airline_statusline_ontop = 0
 
 
@@ -275,13 +276,13 @@ let g:airline_statusline_ontop = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " True Color Support
-" if (has("termguicolors"))
-  " set termguicolors
-" endif
+"if (has("termguicolors"))
+ "set termguicolors
+"endif
 
 " Material Theme
-" let g:material_terminal_italics = 1
-" let g:material_theme_style = 'darker'
+let g:material_terminal_italics = 1
+let g:material_theme_style = 'darker'
 colorscheme wpgtkAlt
 
 " Remove blank line tildes
