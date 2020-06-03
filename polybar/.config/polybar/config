@@ -19,10 +19,11 @@
 [colors]
 background = ${xrdb:color0:#222}
 background2 = ${xrdb:color8:#222}
+background3 = ${xrdb:color8:#222}
 ;background = #E6181818
-background-alt = ${xrdb:color12:#222}
+background-alt = ${xrdb:color9:#222}
 foreground = ${xrdb:color15:#222}
-foreground-alt = ${xrdb:color9:#222}
+foreground-alt = ${xrdb:color12:#222}
 foreground-alt2 = ${xrdb:color0:#222}
 primary = ${xrdb:color9}
 secondary = ${xrdb:color14}
@@ -63,7 +64,7 @@ modules-right = backlight-acpi pulseaudio xkeyboard memory cpu wlan networkdown 
 
 tray-position = right
 tray-padding = 10
-tray-background = ${colors.background2}
+tray-background = ${colors.background3}
 
 ;wm-restack = bspwm
 ;wm-restack = i3
