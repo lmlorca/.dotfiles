@@ -69,6 +69,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'kaicataldo/material.vim'
+Plug 'markvincze/panda-vim'
 Plug 'deviantfero/wpgtk.vim'
 
 call plug#end()
@@ -265,7 +266,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "map <leader>f :Prettier<CR>
 
 " Airline Theme
-let g:airline_theme = 'wpgtk'
+let g:airline_theme = 'base16_default'
 let g:airline_powerline_fonts = 1
 let g:airline_statusline_ontop = 0
 
@@ -276,14 +277,14 @@ let g:airline_statusline_ontop = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " True Color Support
-"if (has("termguicolors"))
- "set termguicolors
-"endif
+if (has("termguicolors"))
+ set termguicolors
+endif
 
 " Material Theme
 let g:material_terminal_italics = 1
-let g:material_theme_style = 'darker'
-colorscheme wpgtkAlt
+let g:material_theme_style = 'dark'
+colorscheme material
 
 " Remove blank line tildes
 set fcs=eob:\ 

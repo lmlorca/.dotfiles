@@ -32,7 +32,8 @@ exec --no-startup-id nm-applet
 
 
 # Autostart
-exec_always --no-startup-id wpg -s $(wpg -c)
+#exec_always --no-startup-id wpg -s $(wpg -c)
+exec_always --no-startup-id wal -R -s
 #exec xrandr --dpi 144
 exec --no-startup-id /usr/lib/gsd-xsettings
 #exec_always --no-startup-id gnome-power-manager
@@ -44,8 +45,8 @@ exec_always --no-startup-id  $HOME/.scripts/picom.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id setxkbmap -layout us
 exec --no-startup-id pamac-tray
-exec_always --no-startup-id $HOME/.scripts/flashfocus.sh
-exec_always --no-startup-id autotiling
+#exec_always --no-startup-id $HOME/.scripts/flashfocus.sh
+#exec_always --no-startup-id autotiling
 
 #
 # Use pactl to adjust volume in PulseAudio.
@@ -81,12 +82,12 @@ set_from_resource $focus_inac i3wm.color1
 set_from_resource $foreg_inac i3wm.color0
 set_from_resource $indic_inac i3wm.color1
 
-set_from_resource $unfoc_main i3wm.color0
+set $unfoc_main #080808
 set_from_resource $unfoc_fore i3wm.color1
 set_from_resource $unfoc_bord i3wm.color1
 
 # class                  border        background   text         indicator    child_border
-client.focused           $focus_main   $focus_main  $foreg_main  $focus_main  $background
+client.focused           $focus_main   $focus_main  $foreg_main  $indic_main  $focus_main
 client.focused_inactive  $focus_inac   $focus_inac  $foreg_inac  $background  $background
 client.unfocused         $unfoc_main   $unfoc_main  $unfoc_fore  $background  $background 
 client.urgent            #E6847B   #E6847B      #ffffff  #E3E3E3     #E6847B
@@ -100,7 +101,7 @@ bindsym $mod+n exec --no-startup-id flash_window
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 
 # kill focused windownn
 bindsym $mod+Shift+q kill
