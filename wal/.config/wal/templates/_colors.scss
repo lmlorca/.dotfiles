@@ -37,7 +37,7 @@
 
 $on-colors: (
   dark: (
-    primary: #1a73e8,
+    primary: {color9},
     error: #d93025,
     text: rgba(black, .87),
     text2: rgba(black, .6),
@@ -81,7 +81,7 @@ $on-colors: (
 }}
 
 // Private variables for dark background colors
-$-dark-background:                       {color0};
+$-dark-background:                       #181818;
 $-dark-surface-1dp:                      mix(white, $-dark-background, 5%);
 $-dark-surface-4dp:                      mix(white, $-dark-background, 9%);
 $-dark-surface-8dp:                      mix(white, $-dark-background, 12%);

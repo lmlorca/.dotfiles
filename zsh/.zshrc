@@ -106,8 +106,8 @@ source $ZSH/oh-my-zsh.sh
 alias vim='nvim'
 alias vi='nvim'
 
-unimatrix -a -s 100 -w -c red
-neofetch
+unimatrix -a -s 100 -w -c cyan
+pfetch
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char

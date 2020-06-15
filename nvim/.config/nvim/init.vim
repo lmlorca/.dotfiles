@@ -42,6 +42,9 @@ set noshowmode
 " Use system clipboard by default
 set clipboard+=unnamedplus
 
+" Reload neovim config
+map <leader>r :so $HOME/.config/nvim/init.vim<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,6 +66,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'pangloss/vim-javascript'
 Plug 'ap/vim-css-color'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'MaxMellon/vim-jsx-pretty'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
