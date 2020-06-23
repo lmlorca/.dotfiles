@@ -8,6 +8,7 @@ imap jj <Esc>
 
 " Line numbers
 set number relativenumber
+nnoremap <leader>l :set invnumber invrelativenumber<CR>
 
 " Smart Case Search
 set ignorecase
@@ -53,6 +54,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-commentary'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -75,7 +77,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kaicataldo/material.vim'
 Plug 'markvincze/panda-vim'
 Plug 'deviantfero/wpgtk.vim'
-
+Plug 'richtan/pywal.vim'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 

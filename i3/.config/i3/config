@@ -41,13 +41,13 @@ exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id gnome-flashback
 #exec --no-startup-id xsettingsd
-exec_always --no-startup-id  $HOME/.scripts/picom.sh
 #exec --no-startup-id nitrogen --restore &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id setxkbmap -layout us
 exec --no-startup-id pamac-tray
 #exec_always --no-startup-id $HOME/.scripts/flashfocus.sh
 #exec_always --no-startup-id autotiling
+exec_always --no-startup-id $HOME/.scripts/picom.sh
 
 #
 # Use pactl to adjust volume in PulseAudio.
@@ -62,7 +62,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 for_window [class="^.*"] border pixel 1 title_format <span font='Noto Sans Medium 9'>    %title</span>
 
 # Gaps
-gaps inner 10
+gaps inner 40
 gaps outer 0
 
 smart_gaps on
@@ -79,11 +79,12 @@ set_from_resource $focus_main i3wm.color9
 set_from_resource $foreg_main i3wm.color0
 set_from_resource $indic_main i3wm.color15
 
-set_from_resource $focus_inac i3wm.color1
+set $focus_inac #52525200
 set_from_resource $foreg_inac i3wm.color0
 set_from_resource $indic_inac i3wm.color1
 
-set $unfoc_main #151515
+set $unfoc_main #151515cc
+set_from_resource $focus_inac i3wm.color1
 set_from_resource $unfoc_fore i3wm.color1
 set_from_resource $unfoc_bord i3wm.color1
 
@@ -106,6 +107,12 @@ bindsym $mod+Return exec alacritty
 
 bindsym $mod+Shift+f exec nemo
 bindsym $mod+Shift+b exec firefox
+bindsym $mod+Shift+u exec setxkbmap -layout us
+bindsym $mod+Shift+y exec setxkbmap -layout es
+
+bindsym $mod+p exec $HOME/.scripts/picom.sh
+bindsym $mod+Shift+p exec pkill picom
+
 
 # kill focused windownn
 bindsym $mod+Shift+q kill
@@ -239,15 +246,15 @@ mode "resize" {
 
 
 #bindsym $mod+r mode "resize"
-bindsym $mod+Control+h resize shrink width 1 px or 1 ppt
-bindsym $mod+Control+j resize grow height 1 px or 1 ppt
-bindsym $mod+Control+k resize shrink height 1 px or 1 ppt
-bindsym $mod+Control+l resize grow width 1 px or 1 ppt
+bindsym $mod+Control+h resize shrink width 10 px or 10 ppt
+bindsym $mod+Control+j resize grow height 10 px or 10 ppt
+bindsym $mod+Control+k resize shrink height 10 px or 10 ppt
+bindsym $mod+Control+l resize grow width 10 px or 10 ppt
 
 mode "gaps" {
         bindsym plus  gaps inner all plus 5
         bindsym minus gaps inner all minus 5
-        bindsym 0     gaps inner all set 10
+        bindsym 0     gaps inner all set 40
 
         bindsym Return mode "$mode_gaps"
         bindsym Escape mode "default"
