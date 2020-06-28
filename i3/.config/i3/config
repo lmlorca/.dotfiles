@@ -62,7 +62,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 for_window [class="^.*"] border pixel 1 title_format <span font='Noto Sans Medium 9'>    %title</span>
 
 # Gaps
-gaps inner 40
+gaps inner 10
 gaps outer 0
 
 smart_gaps on
@@ -254,7 +254,7 @@ bindsym $mod+Control+l resize grow width 10 px or 10 ppt
 mode "gaps" {
         bindsym plus  gaps inner all plus 5
         bindsym minus gaps inner all minus 5
-        bindsym 0     gaps inner all set 40
+        bindsym 0     gaps inner all set 10
 
         bindsym Return mode "$mode_gaps"
         bindsym Escape mode "default"

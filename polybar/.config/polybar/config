@@ -17,8 +17,8 @@
 ;==========================================================
 
 [colors]
-background = #E6151515
-background2 = #333333
+background = #B3151515
+background2 = #B3333333
 background3 = ${xrdb:color8:#222}
 ;background = #E6181818
 background-alt = ${xrdb:color9:#222}
@@ -44,7 +44,7 @@ foreground = ${colors.foreground}
 line-size = 0
 line-color = #f00
 
-border-size = 0
+border-size = 1
 border-color = #141414
 
 padding-left = 0
@@ -79,7 +79,7 @@ override-redirect = false
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-bottom = false
+bottom = true
 
 [module/xwindow]
 type = internal/xwindow
