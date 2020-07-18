@@ -7,7 +7,7 @@ gsettings set org.gnome.desktop.interface gtk-theme 'wal-dark-compact' &&
 #meson "build" --prefix=$HOME/.local &&
 #ninja -C "build" install &&
 #gsettings set org.gnome.desktop.interface icon-theme '' &&
-gsettings set org.gnome.desktop.interface icon-theme 'Paper'
+gsettings set org.gnome.desktop.interface icon-theme 'Vimix-Black-dark'
 #./render-assets.sh gtk2-dark &&
 #./install.sh -d $HOME/.themes --color dark --size compact --name wpg &&
 #sleep 1 &&

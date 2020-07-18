@@ -1,1 +1,3 @@
-plugged/
+nvim/.config/nvim/plugged/
+wpg/.config/wpg/*
+!wpg/.config/wpg/wpg.conf
