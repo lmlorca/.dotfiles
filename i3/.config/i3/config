@@ -69,10 +69,10 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 for_window [class="^.*"] border pixel 1 title_format <span font='Noto Sans Medium 9'>    %title</span>
 
 # Gaps
-gaps inner 10
+gaps inner 0
 gaps outer 0
 
-smart_gaps on
+# smart_gaps on
 smart_borders on
 
 # Floating dialogs
@@ -121,12 +121,15 @@ bindsym $mod+Shift+u exec setxkbmap -layout us
 bindsym $mod+Shift+y exec setxkbmap -layout es
 
 
-bindsym Print exec --no-startup-id scrot
-bindsym --release $mod+Shift+s exec --no-startup-id scrot --select
-bindsym --release $mod+Shift+a exec --no-startup-id scrot --focused
 
-bindsym $mod+p exec $HOME/.scripts/picom.sh
-bindsym $mod+Shift+p exec pkill picom
+
+bindsym Print exec --no-startup-id mkdir -p $HOME/Pictures/Capture/Desktop && maim $HOME/Pictures/Capture/Desktop/$(date +%F-%T).png
+bindsym --release $mod+Shift+s exec --no-startup-id mkdir -p $HOME/Pictures/Capture/Selection && maim -s $HOME/Pictures/Capture/Selection/$(date +%F-%T).png
+bindsym --release $mod+Shift+a exec --no-startup-id mkdir -p $HOME/Pictures/Capture/Window && maim -i $(xdotool getactivewindow) $HOME/Pictures/Capture/Window/$(date +%F-%T).png
+
+
+bindsym $mod+p exec --no-startup-id $HOME/.scripts/picom.sh
+bindsym $mod+Shift+p exec --no-startup-id pkill picom
 
 
 # kill focused windownn
@@ -271,7 +274,7 @@ bindsym $mod+Control+l resize grow width 10 px or 10 ppt
 mode "gaps" {
         bindsym plus  gaps inner all plus 5
         bindsym minus gaps inner all minus 5
-        bindsym 0     gaps inner all set 10
+        bindsym 0     gaps inner all set 0
 
         bindsym Return mode "$mode_gaps"
         bindsym Escape mode "default"

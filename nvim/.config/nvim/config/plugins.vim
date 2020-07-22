@@ -17,6 +17,7 @@ Plug 'airblade/vim-rooter'
 Plug 'preservim/nerdtree'
 " Plug 'kevinhwang91/rnvimr'
 Plug 'mhinz/vim-startify'
+Plug 'vimwiki/vimwiki'
 
 Plug 'tpope/vim-fugitive'
 

@@ -1,4 +1,6 @@
-let g:airline_theme = 'base16_classic'
+:" let g:airline_theme = 'base16_classic'
+let g:airline_theme = 'base16_vim'
+let g:airline_theme = 'base16_custom'
 
 " enable tabline
 let g:airline#extensions#tabline#enabled = 1
@@ -26,3 +28,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
+
+
+" Override

@@ -17,3 +17,6 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" Something about buffers
+set hidden

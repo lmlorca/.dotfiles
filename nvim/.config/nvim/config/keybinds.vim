@@ -16,11 +16,18 @@ set smartcase
 " Default split orientation
 set splitbelow splitright
 
+
+" Split resize
+noremap <silent> <C-A-l> :vertical resize +10<CR>
+noremap <silent> <C-A-h> :vertical resize -10<CR>
+noremap <silent> <C-A-k> :resize -10<CR>
+noremap <silent> <C-A-j> :resize +10<CR>
+
 " Split navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <silent> <C-h> <C-w>h
+nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
 
 
 " Toggle auto-comment
@@ -29,8 +36,13 @@ map <leader>C :setlocal formatoptions=cro<CR>
 
 
 " Reload neovim config
-map <leader>r :so $HOME/.config/nvim/init.vim<CR>
+map <silent> <leader>r :so $HOME/.config/nvim/init.vim<CR>
+
+" Buffer navigation
+nnoremap <silent> <A-j> :bp<CR>
+nnoremap <silent> <A-k> :bn<CR>
+nnoremap <silent> <A-x> :bd<CR>
 
 " Tab navigation
-nnoremap <A-j> :bp<CR>
-nnoremap <A-k> :bn<CR>
+nnoremap <silent> <A-h> :tabp<CR>
+nnoremap <silent> <A-l> :tabn<CR>

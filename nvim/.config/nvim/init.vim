@@ -28,6 +28,9 @@ source $HOME/.config/nvim/config/plugins/nerdtree.vim
 " CoC
 source $HOME/.config/nvim/config/plugins/coc.vim
 
+" Vim Wiki
+source $HOME/.config/nvim/config/plugins/vimwiki.vim
+
 " Airline
 source $HOME/.config/nvim/config/themes/airline.vim
 
