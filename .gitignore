@@ -1,5 +1,4 @@
-nvim/.config/nvim/plugged/*
-!nvim/.config/nvim/plugged/vim-airline-themes/autoload/airline/themes/base16_custom.vim
+nvim/.config/nvim/plugged/
 
 wpg/.config/wpg/*
 !wpg/.config/wpg/wpg.conf
