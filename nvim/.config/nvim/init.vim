@@ -41,5 +41,8 @@ source $HOME/.config/nvim/config/themes/airline.vim
 " Material
 source $HOME/.config/nvim/config/themes/material.vim
 
+" Nord
+" source $HOME/.config/nvim/config/themes/nord.vim
+
 " Global
 source $HOME/.config/nvim/config/themes/global.vim

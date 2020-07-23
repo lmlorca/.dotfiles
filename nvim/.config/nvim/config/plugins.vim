@@ -21,10 +21,11 @@ Plug 'vimwiki/vimwiki'
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'pangloss/vim-javascript'
+Plug 'sheerun/vim-polyglot'
+" Plug 'pangloss/vim-javascript'
 Plug 'ap/vim-css-color'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'MaxMellon/vim-jsx-pretty'
+" Plug 'MaxMellon/vim-jsx-pretty'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -32,6 +33,11 @@ Plug 'ryanoasis/vim-devicons'
 " Plug 'junegunn/goyo.vim'
 
 Plug 'kaicataldo/material.vim'
+Plug 'dikiaap/minimalist'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
 Plug 'markvincze/panda-vim'
