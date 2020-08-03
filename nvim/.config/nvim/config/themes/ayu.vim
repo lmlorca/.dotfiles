@@ -3,14 +3,12 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-" Material Theme
-let g:material_terminal_italics = 1
-let g:material_theme_style = 'darker'
-colorscheme material
+set termguicolors     " enable true colors support
+" let ayucolor="light"  " for light version of theme
+let ayucolor="mirage" " for mirage version of theme
+" let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 
-" Html Syntax Hack
-" autocmd BufNewFile,BufRead *.html set syntax=javascript
-" autocmd BufNewFile,BufRead *.php set syntax=javascript
 
 " Background transparent
 hi Normal guibg=NONE ctermbg=NONE
@@ -26,10 +24,3 @@ set colorcolumn=80
 highlight ColorColumn guibg = '#181818'
 " Extend lineguide background to end
 let &colorcolumn=join(range(81,999),",")
-
-" Fix weird parenthesis
-hi MatchParen cterm=bold ctermfg=220 gui=bold guifg=#ffcc00 guibg=#263238
-
-:" let g:airline_theme = 'base16_classic'
-" let g:airline_theme = 'base16_vim'
-let g:airline_theme = 'base16_custom'

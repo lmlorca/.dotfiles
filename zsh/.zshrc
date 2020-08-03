@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim='nvim'
 alias vi='nvim'
 
-# unimatrix -a -s 100 -w -c cyan
+unimatrix -a -s 100 -w -c cyan
 pfetch
 
 # Use vim keys in tab complete menu:

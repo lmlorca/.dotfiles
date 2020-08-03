@@ -41,8 +41,17 @@ source $HOME/.config/nvim/config/themes/airline.vim
 " Material
 source $HOME/.config/nvim/config/themes/material.vim
 
+" Monokai
+" source $HOME/.config/nvim/config/themes/monokai.vim
+
 " Nord
 " source $HOME/.config/nvim/config/themes/nord.vim
+
+" Ayu
+" source $HOME/.config/nvim/config/themes/ayu.vim
+
+" Wpgtk
+" source $HOME/.config/nvim/config/themes/wpg.vim
 
 " Global
 source $HOME/.config/nvim/config/themes/global.vim
