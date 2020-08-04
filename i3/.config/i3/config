@@ -113,6 +113,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Shift+Return exec --no-startup-id alacritty -e nvim -c VimwikiIndex
 
 bindsym $mod+Shift+f exec nemo
 bindsym $mod+b exec firefox

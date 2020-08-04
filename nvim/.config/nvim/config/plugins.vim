@@ -19,6 +19,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'kevinhwang91/rnvimr'
 " Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'tpope/vim-fugitive'
 

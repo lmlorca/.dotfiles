@@ -31,6 +31,9 @@ source $HOME/.config/nvim/config/plugins/coc.vim
 " Vim Wiki
 source $HOME/.config/nvim/config/plugins/vimwiki.vim
 
+" Table Mode
+source $HOME/.config/nvim/config/plugins/tablemode.vim
+
 " Airline
 source $HOME/.config/nvim/config/themes/airline.vim
 
