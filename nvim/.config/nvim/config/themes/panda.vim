@@ -31,5 +31,5 @@ let &colorcolumn=join(range(81,999),",")
 hi MatchParen cterm=bold ctermfg=220 gui=bold guifg=#ffcc00 guibg=#263238
 
 " let g:airline_theme = 'base16_classic'
-let g:airline_theme = 'base16_vim'
-" let g:airline_theme = 'base16_custom'
+" let g:airline_theme = 'base16_vim'
+let g:airline_theme = 'base16_custom'

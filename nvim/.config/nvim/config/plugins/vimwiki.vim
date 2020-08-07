@@ -1,6 +1,5 @@
 set nocompatible
 filetype plugin on
-syntax on
 
 " Disable vimwiki table formatting
 :" let g:vimwiki_table_mappings=0

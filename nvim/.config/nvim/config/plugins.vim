@@ -20,13 +20,14 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'dhruvasagar/vim-table-mode'
+" Plug '07th/vim-auto-save'
 
 Plug 'tpope/vim-fugitive'
 
 Plug 'sheerun/vim-polyglot'
 " Plug 'pangloss/vim-javascript'
-Plug 'ap/vim-css-color'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+" Plug 'ap/vim-css-color'
+" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 " Plug 'MaxMellon/vim-jsx-pretty'
 
 Plug 'vim-airline/vim-airline'
@@ -35,6 +36,7 @@ Plug 'ryanoasis/vim-devicons'
 " Plug 'junegunn/goyo.vim'
 
 Plug 'kaicataldo/material.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'dikiaap/minimalist'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'crusoexia/vim-monokai'

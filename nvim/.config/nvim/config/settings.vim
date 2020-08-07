@@ -2,6 +2,11 @@
 " Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
+" syntax on
+if !exists('g:syntax_on')
+	syntax enable
+endif
+
 " Fix for alacritty mouse support
 set mouse=a
 
@@ -20,6 +25,9 @@ set expandtab
 
 " Something about buffers
 set hidden
+
+" Disable swap
+" set noswapfile
 
 " Inspect syntax grop :call SynStack()
 function! SynStack()

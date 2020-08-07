@@ -62,7 +62,7 @@ font-1 = Hack Nerd Font:pixelsize=9.5:antialias=true;2
 ;modules-left = spectrwm bspwm i3
 modules-left = bspwm i3 xwindow
 ;modules-center = mpd
-modules-right = backlight-acpi pulseaudio xkeyboard memory cpu networkdown networkup wifiup wifidown temperature date
+modules-right = xkeyboard backlight-acpi pulseaudio memory cpu networkdown networkup wifiup wifidown temperature date
 
 tray-position = right
 tray-padding = 10
@@ -103,7 +103,7 @@ blacklist-0 = num lock
 format-prefix = "   "
 format-prefix-foreground = ${colors.foreground-alt}
 
-label-layout = %layout%
+label-layout = %name%
 
 label-indicator-padding = 2
 label-indicator-margin = 1
