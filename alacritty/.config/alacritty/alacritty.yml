@@ -92,10 +92,14 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Hack Nerd Font
+    family: JetBrainsMono Nerd Font
+    # family: FiraCode Nerd Font Mono
+    # family: Courier Prime Code
+    #family: Anonymous Pro Minus
+    #family: FantasqueSansMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    #style: Regular
+    style: Regular
 
   # Bold font face
   #bold:
@@ -131,13 +135,13 @@ font:
   #style: Bold Italic
 
   # Point size
-  size: 7.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 1
-    y: 1
+    x: 0
+    y: 2
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -163,50 +167,65 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
+schemes:
+  dark: &dark
+  # Default colors
+    primary:
+      background: "0x151515"
+      foreground: "0xffffff"
 
-# Colors (Tomorrow Night Bright)
+    # Normal colors
+    normal:
+      black: "0x101010"
+      red: "0xe84f4f"
+      green: "0xb8d68c"
+      yellow: "0xe1aa5d"
+      blue: "0x7dc1cf"
+      magenta: "0x9b64fb"
+      cyan: "0x6d878d"
+      white: "0xdddddd"
+
+    # Bright colors
+    bright:
+      black: "0x404040"
+      red: "0xd23d3d"
+      green: "0xa0cf5d"
+      yellow: "0xf39d21"
+      blue: "0x4e9fb1"
+      magenta: "0x8542ff"
+      cyan: "0x42717b"
+      white: "0xbababa"
+
+  light: &light      
+# Default colors
+    primary:
+      background: '0xf5f5f5'
+      foreground: '0x303030'
+
+    # Normal colors
+    normal:
+      black:   '0x151515'
+      red:     '0xac4142'
+      green:   '0x90a959'
+      yellow:  '0xf4bf75'
+      blue:    '0x6a9fb5'
+      magenta: '0xaa759f'
+      cyan:    '0x75b5aa'
+      white:   '0x404040'
+
+    # Bright colors
+    bright:
+      black:   '0x505050'
+      red:     '0xd34244'
+      green:   '0xa7cf4f'
+      yellow:  '0xf8b14e'
+      blue:    '0x439ec4'
+      magenta: '0xca60b4'
+      cyan:    '0x5dcebb'
+      white:   '0xd0d0d0'
 
 colors:
-  # Default colors
-  primary:
-    background: "0x181818"
-    foreground: "0xd0d0d0"
-
-  # Normal colors
-  normal:
-    black: "0x151515"
-    red: "0xac4142"
-    green: "0x90a959"
-    yellow: "0xf4bf75"
-    blue: "0x6a9fb5"
-    magenta: "0xaa759f"
-    cyan: "0x75b5aa"
-    white: "0xd0d0d0"
-
-  # Bright colors
-  bright:
-    black: "0x505050"
-    red: "0xac4142"
-    green: "0x90a959"
-    yellow: "0xf4bf75"
-    blue: "0x6a9fb5"
-    magenta: "0xaa759f"
-    cyan: "0x75b5aa"
-    white: "0xf5f5f5"
-
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '#000000'
-  #  red:     '#8c3336'
-  #  green:   '#7a8530'
-  #  yellow:  '#97822e'
-  #  blue:    '#506d8f'
-  #  magenta: '#80638e'
-  #  cyan:    '#497e7a'
-  #  white:   '#9a9a9a'
+  *dark
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.
@@ -216,7 +235,6 @@ colors:
   #   `- { index: 16, color: '#ff00ff' }`
   #
   #indexed_colors: []
-
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
@@ -247,13 +265,13 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.96
+#background_opacity: 0.98
 #selection: #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 # When set to `true`, selected text will be copied to the primary clipboard.
 #save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
-#dynamic_title: true
+window.dynamic_title: true
 
 #cursor:
 # Cursor style

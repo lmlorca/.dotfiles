@@ -1,4 +1,7 @@
 configuration {
- theme: "fullscreen";
- font: "Noto Sans Regular 14";
+ combi-modi: "window,drun";
+ modi: "combi,drun,run,ssh";
+ theme: "~/.cache/wal/slate-rofi";
+ font: "Noto Sans Regular 11";
+ show-icons: true;
 }
