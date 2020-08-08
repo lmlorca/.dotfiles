@@ -26,7 +26,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'sheerun/vim-polyglot'
 " Plug 'pangloss/vim-javascript'
-" Plug 'ap/vim-css-color'
+Plug 'ap/vim-css-color'
 " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 " Plug 'MaxMellon/vim-jsx-pretty'
 

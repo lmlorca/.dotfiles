@@ -16,26 +16,26 @@ source $HOME/.config/nvim/config/plugins.vim
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-" " Sneak
-" source $HOME/.config/nvim/config/plugins/sneak.vim
+" Sneak
+source $HOME/.config/nvim/config/plugins/sneak.vim
 
-" " FZF
-" source $HOME/.config/nvim/config/plugins/fzf.vim
+" FZF
+source $HOME/.config/nvim/config/plugins/fzf.vim
 
-" " NERDTree
-" source $HOME/.config/nvim/config/plugins/nerdtree.vim
+" NERDTree
+source $HOME/.config/nvim/config/plugins/nerdtree.vim
 
-" " CoC
-" source $HOME/.config/nvim/config/plugins/coc.vim
+" CoC
+source $HOME/.config/nvim/config/plugins/coc.vim
 
-" " Vim Wiki
-" source $HOME/.config/nvim/config/plugins/vimwiki.vim
+" Vim Wiki
+source $HOME/.config/nvim/config/plugins/vimwiki.vim
 
-" " Table Mode
-" source $HOME/.config/nvim/config/plugins/tablemode.vim
+" Table Mode
+source $HOME/.config/nvim/config/plugins/tablemode.vim
 
-" " Airline
-" source $HOME/.config/nvim/config/themes/airline.vim
+" Airline
+source $HOME/.config/nvim/config/themes/airline.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Theming
