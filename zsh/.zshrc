@@ -105,6 +105,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim='nvim'
 alias vi='nvim'
+alias v='nvim'
+
+export VISUAL=nvim
+export EDITOR=nvim
 
 unimatrix -a -s 100 -w -c cyan
 pfetch
@@ -125,6 +129,11 @@ export PATH="$HOME/.bin/:$PATH"
 
 PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix=~/.node_modules
+export NODE_PATH="$HOME/.node_modules/lib/node_modules"
+
+# Vimwiki
+WIKI="$HOME/Documents/wiki"
+PATH="$WIKI:$PATH"
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx

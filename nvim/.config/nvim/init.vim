@@ -44,6 +44,9 @@ source $HOME/.config/nvim/config/themes/airline.vim
 " Material
 source $HOME/.config/nvim/config/themes/material.vim
 
+" One Dark
+" source $HOME/.config/nvim/config/themes/onedark.vim
+
 " Dracula
 " source $HOME/.config/nvim/config/themes/dracula.vim
 
