@@ -21,20 +21,20 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vimwiki/vimwiki'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-" Plug '07th/vim-auto-save'
 
 Plug 'tpope/vim-fugitive'
 
 Plug 'sheerun/vim-polyglot'
 " Plug 'pangloss/vim-javascript'
-Plug 'ap/vim-css-color'
+" Plug 'ap/vim-css-color'
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' } 
 " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 " Plug 'MaxMellon/vim-jsx-pretty'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
-" Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim'
 
 Plug 'kaicataldo/material.vim'
 Plug 'joshdick/onedark.vim'

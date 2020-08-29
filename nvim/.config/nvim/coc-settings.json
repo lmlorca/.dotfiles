@@ -1,5 +1,6 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["*"],
   "coc.preferences.formatOnTypeFiletypes": ["*"],
-  "coc.preferences.colorSupport": false
+  "coc.preferences.colorSupport": false,
+  "emmet.includeLanguages": { "javascript": "javascriptreact" }
 }

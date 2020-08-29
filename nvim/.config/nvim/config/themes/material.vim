@@ -12,15 +12,17 @@ colorscheme material
 hi Normal guibg=NONE ctermbg=NONE
 
 hi SignColumn guibg='#151515'
-hi LineNr guibg='#151515' guifg='#424242'
-hi VertSplit guibg='#212121' guifg='#212121'
-hi CursorLineNr guibg='#111111' guifg='#cdcdcd'
+hi LineNr guibg='#151515' guifg='#282828'
+" hi VertSplit guibg='#212121' guifg='#212121'
+hi VertSplit guibg='#121212' guifg='#121212'
+hi CursorLineNr guibg='#151515' guifg='#cdcdcd'
 hi Comment guifg='#484848'
 
 " Column lineguide
 set colorcolumn=80
-highlight ColorColumn guibg = '#181818'
-" highlight ColorColumn guibg = '#151515'
+" highlight ColorColumn guibg = '#181818'
+highlight ColorColumn guibg = '#141414'
+
 " Extend lineguide background to end
 let &colorcolumn=join(range(81,999),",")
 
