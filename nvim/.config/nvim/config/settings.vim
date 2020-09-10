@@ -7,6 +7,23 @@ if !exists('g:syntax_on')
 	syntax enable
 endif
 
+" Line numbers
+set number relativenumber
+nnoremap <leader>l :set invnumber invrelativenumber<CR>
+
+" Smart Case Search
+set ignorecase
+set smartcase
+
+" Other
+set hlsearch
+set cursorline
+" set cursorcolumn
+set title
+
+" Default split orientation
+set splitbelow splitright
+
 " Fix for alacritty mouse support
 set mouse=a
 

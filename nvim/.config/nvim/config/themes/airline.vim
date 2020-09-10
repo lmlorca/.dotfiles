@@ -1,6 +1,6 @@
 :" let g:airline_theme = 'base16_classic'
 " let g:airline_theme = 'base16_vim'
-let g:airline_theme = 'base16_custom'
+" let g:airline_theme = 'base16_custom'
 
 " enable tabline
 let g:airline#extensions#tabline#enabled = 1

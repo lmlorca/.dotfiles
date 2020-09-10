@@ -62,7 +62,7 @@ font-1 = Hack Nerd Font:pixelsize=9.5:antialias=true;2
 ;modules-left = spectrwm bspwm i3
 modules-left = bspwm i3 xwindow
 ;modules-center = mpd
-modules-right = xkeyboard backlight-acpi pulseaudio memory cpu networkdown networkup wifiup wifidown temperature date
+modules-right = backlight-acpi pulseaudio memory cpu networkdown networkup wifiup wifidown temperature xkeyboard date
 
 tray-position = right
 tray-padding = 10

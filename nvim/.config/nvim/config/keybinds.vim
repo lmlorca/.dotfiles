@@ -4,19 +4,7 @@
 
 let mapleader = " "
 imap jj <Esc>
-
-" Line numbers
-set number relativenumber
-nnoremap <leader>l :set invnumber invrelativenumber<CR>
-
-" Smart Case Search
-set ignorecase
-set smartcase
-
-" Default split orientation
-set splitbelow splitright
-
-
+"
 " Split resize
 noremap <silent> <C-A-l> :vertical resize +10<CR>
 noremap <silent> <C-A-h> :vertical resize -10<CR>
