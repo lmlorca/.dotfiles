@@ -18,13 +18,16 @@ hi VertSplit guibg='#121212' guifg='#121212'
 hi CursorLineNr guibg='#151515' guifg='#cdcdcd'
 hi Comment guifg='#484848'
 
-" Column lineguide
-set colorcolumn=80
-" highlight ColorColumn guibg = '#181818'
-highlight ColorColumn guibg = '#141414'
+" Cursor Lines
+" hi CursorLine guibg='#121212'
 
-" Extend lineguide background to end
-let &colorcolumn=join(range(81,999),",")
+" Column lineguide
+" set colorcolumn=80
+" " highlight ColorColumn guibg = '#181818'
+" highlight ColorColumn guibg = '#141414'
+
+" " Extend lineguide background to end
+" let &colorcolumn=join(range(81,999),",")
 
 " Fix weird parenthesis
 hi MatchParen cterm=bold ctermfg=220 gui=bold guifg=#ffcc00 guibg=#263238
