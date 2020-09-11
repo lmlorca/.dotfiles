@@ -19,7 +19,7 @@ hi CursorLineNr guibg='#151515' guifg='#cdcdcd'
 hi Comment guifg='#484848'
 
 " Cursor Lines
-" hi CursorLine guibg='#121212'
+hi CursorLine guibg='#181818'
 
 " Column lineguide
 " set colorcolumn=80
