@@ -62,7 +62,7 @@ font-1 = Hack Nerd Font:pixelsize=9.5:antialias=true;2
 ;modules-left = spectrwm bspwm i3
 modules-left = bspwm i3 xwindow
 ;modules-center = mpd
-modules-right = backlight-acpi pulseaudio memory cpu networkdown networkup wifiup wifidown temperature xkeyboard date
+modules-right = backlight-acpi pulseaudio memory cpu networkup networkdown wifiup wifidown temperature xkeyboard date
 
 tray-position = right
 tray-padding = 10
@@ -81,7 +81,7 @@ override-redirect = false
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-bottom = false
+bottom = true
 
 [module/rofi]
 type = custom/text
@@ -93,7 +93,7 @@ click-right = exec rofi -show window
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:250:...%
+label = %title:0:150:...%
 format-padding = 2
 
 [module/xkeyboard]

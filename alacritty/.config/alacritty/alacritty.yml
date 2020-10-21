@@ -92,7 +92,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font
+    # family: JetBrainsMono Nerd Font
+    family: Hack Nerd Font Mono
     # family: FiraCode Nerd Font Mono
     # family: Courier Prime Code
     #family: Anonymous Pro Minus

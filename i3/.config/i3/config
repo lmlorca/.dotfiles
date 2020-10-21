@@ -67,10 +67,10 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # Windows, Borders and Gaps
 # Remove titles
-for_window [class="^.*"] border pixel 1 title_format <span font='Noto Sans Medium 9'>    %title</span>
+for_window [class="^.*"] border pixel 2 title_format <span font='Noto Sans Medium 10'>    %title</span>
 
 # Gaps
-gaps inner 20
+gaps inner 10
 gaps outer 0
 
 # smart_gaps on
@@ -279,7 +279,7 @@ bindsym $mod+Control+l resize grow width 10 px or 10 ppt
 mode "gaps" {
         bindsym plus  gaps inner all plus 5
         bindsym minus gaps inner all minus 5
-        bindsym 0     gaps inner all set 20
+        bindsym 0     gaps inner all set 10
 
         bindsym Return mode "$mode_gaps"
         bindsym Escape mode "default"
