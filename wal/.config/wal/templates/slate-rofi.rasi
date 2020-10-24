@@ -1,0 +1,73 @@
+configuration {{
+  show-icons: true;
+  /* drun-display-format: "{{icon}} {{name}}"; */
+  display-run: " ";
+  display-drun: " ";
+  display-window: " ";
+  modi: "window,run,drun";
+}}
+
+* {{
+  background-color: #151515;
+  border-color: #111111;
+  text-color: #ffffffa6;
+  spacing: 0;
+  width: 30%;
+  height: 1053px;
+  /* location: north west; */
+  border: 0 0 0 0;
+
+  width: 50%;
+  height: 50%;
+}}
+
+inputbar {{
+  border: 0 0 1px 0;
+  children: [prompt,entry];
+}}
+
+prompt {{
+  font: "Hack Nerd Font Medium 12";
+  padding: 18px;
+  border: 0 0 0 0;
+  enabled: true;
+  background-color: #222222;
+}}
+
+textbox {{
+  background-color: #2e343f;
+  border: 0 0 1px 0;
+  border-color: {color9};
+  padding: 14px;
+}}
+
+entry {{
+  padding: 18px;
+  background-color: #222222;
+  color: white;
+}}
+
+listview {{
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
+  border: 0 1px 0 0;
+}}
+
+element {{
+  border: 0 0 1px 0;
+  /* padding: 14px; */
+}}
+
+element-icon {{
+  font: "Hack Nerd Font Medium 15";
+  padding: 14px;
+  size: 24px;
+}}
+element-text {{
+  padding: 14px 0;
+}}
+
+element selected {{
+  background-color: {color1};
+}}
