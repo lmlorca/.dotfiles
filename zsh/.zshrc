@@ -110,8 +110,8 @@ alias v='nvim'
 export VISUAL=nvim
 export EDITOR=nvim
 
-unimatrix -a -s 100 -w -c cyan
-pfetch
+# unimatrix -a -s 100 -w -c cyan
+# pfetch
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -128,17 +128,17 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export PATH="$HOME/.bin/:$PATH"
 export PATH="$HOME/.local/bin/:$PATH"
 
-PATH="$HOME/.node_modules/bin:$PATH"
-export npm_config_prefix=~/.node_modules
-export NODE_PATH="$HOME/.node_modules/lib/node_modules"
+# PATH="$HOME/.node_modules/bin:$PATH"
+# export npm_config_prefix=~/.node_modules
+# export NODE_PATH="$HOME/.node_modules/lib/node_modules"
 
 # Vimwiki
 WIKI="$HOME/Documents/wiki"
 PATH="$WIKI:$PATH"
 
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx
-fi
+# if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+#   exec startx
+# fi
 
 # man color
 man() {
@@ -150,3 +150,8 @@ man() {
     LESS_TERMCAP_us=$'\e[01;32m' \
     command man "$@"
 }
+source /usr/share/nvm/init-nvm.sh
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
