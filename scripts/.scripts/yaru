@@ -1,0 +1,106 @@
+#!/usr/bin/node
+
+const { exec } = require("child_process");
+
+var args = process.argv.slice(2);
+
+const setGtkTheme = (color, variant) => {
+  const command = "gsettings set org.gnome.desktop.interface gtk-theme ";
+  const shellCommand =
+    "gsettings set org.gnome.shell.extensions.user-theme name ";
+  const gtkTheme = `'Yaru-${color}'`;
+  const gtkThemeLight = `"Yaru-${color}-light"`;
+  const gtkThemeDark = `"Yaru-${color}-dark"`;
+
+  if (variant === "light") {
+    exec(command + gtkThemeLight);
+    exec(shellCommand + gtkThemeLight);
+    return;
+  }
+
+  if (variant === "dark") {
+    exec(command + gtkThemeDark);
+    exec(shellCommand + gtkThemeDark);
+    return;
+  }
+
+  exec(command + gtkTheme);
+  exec(shellCommand + gtkTheme);
+};
+
+const setIconAndCursor = (color) => {
+  const command = "gsettings set org.gnome.desktop.interface ";
+  const icon = "icon-theme ";
+  const cursor = "cursor-theme ";
+  const theme = `"Yaru-${color}"`;
+
+  exec(command + icon + theme);
+  exec(command + cursor + theme);
+};
+
+const setGtkThemeCommand = (color, variant) => {
+  setGtkTheme(color, variant);
+  setIconAndCursor(color);
+};
+
+const color = args[0];
+const variant = args[1];
+
+switch (color) {
+  case "amber":
+    setGtkThemeCommand("Amber", variant);
+    break;
+  case "aqua":
+    setGtkThemeCommand("Aqua", variant);
+    break;
+  case "blue":
+    setGtkThemeCommand("Blue", variant);
+    break;
+  case "brown":
+    setGtkThemeCommand("Brown", variant);
+    break;
+  case "cinnamon":
+    setGtkThemeCommand("Cinnamon", variant);
+    break;
+  case "green":
+    setGtkThemeCommand("Green", variant);
+    break;
+  case "grey":
+    setGtkThemeCommand("Grey", variant);
+    break;
+  case "mate":
+    setGtkThemeCommand("MATE", variant);
+    break;
+  case "orange":
+    setGtkThemeCommand("Orange", variant);
+    break;
+  case "pink":
+    setGtkThemeCommand("Pink", variant);
+    break;
+  case "purple":
+    setGtkThemeCommand("Purple", variant);
+    break;
+  case "red":
+    setGtkThemeCommand("Red", variant);
+    break;
+  case "teal":
+    setGtkThemeCommand("Teal", variant);
+    break;
+  case "yellow":
+    setGtkThemeCommand("Yellow", variant);
+    break;
+  default:
+    console.log("fuck off");
+}
+
+exec("ls -la", (error, stdout, stderr) => {
+  if (error) {
+    console.log(`error: ${error.message}`);
+    return;
+  }
+  if (stderr) {
+    console.log(`stderr: ${stderr}`);
+    return;
+  }
+  // console.log(`stdout: ${stdout}`);
+});
