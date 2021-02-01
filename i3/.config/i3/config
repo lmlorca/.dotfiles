@@ -48,7 +48,6 @@ exec --no-startup-id pamac-tray
 exec_always --no-startup-id $HOME/.scripts/flashfocus.sh
 #exec_always --no-startup-id autotiling
 exec_always --no-startup-id $HOME/.scripts/picom.sh
-exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id /usr/bin/cbatticon
 exec --no-startup-id /usr/bin/pasystray
 exec --no-startup-id setxkbmap -layout us,es -option 'grp:alt_caps_toggle'

@@ -43,6 +43,17 @@ const setGtkThemeCommand = (color, variant) => {
   setIconAndCursor(color);
 };
 
+const restoreAdwaita = (variant) => {
+  exec(
+    `gsettings set org.gnome.desktop.interface gtk-theme Adwaita${
+      variant === "dark" ? "-dark" : ""
+    }`
+  );
+  exec("gsettings set org.gnome.shell.extensions.user-theme Adwaita");
+  exec("gsettings set org.gnome.desktop.interface icon-theme Adwaita");
+  exec("gsettings set org.gnome.desktop.interface cursor-theme Adwaita");
+};
+
 const color = args[0];
 const variant = args[1];
 
@@ -55,6 +66,9 @@ switch (color) {
     break;
   case "blue":
     setGtkThemeCommand("Blue", variant);
+    break;
+  case "deepblue":
+    setGtkThemeCommand("Deepblue", variant);
     break;
   case "brown":
     setGtkThemeCommand("Brown", variant);
@@ -88,6 +102,9 @@ switch (color) {
     break;
   case "yellow":
     setGtkThemeCommand("Yellow", variant);
+    break;
+  case "restore":
+    restoreAdwaita(variant);
     break;
   default:
     console.log("fuck off");
