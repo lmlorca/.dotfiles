@@ -81,25 +81,30 @@ for_window [class="Pavucontrol"] floating enable resize set 640 480
 
 
 # Colors
-set_from_resource $background i3wm.color0
+set $focus_bord #151515
+set $focus_back #151515
+set $focus_text #151515
+set $focus_indi #151515
+set $focus_chil #ffffff
 
-set_from_resource $focus_main i3wm.color9
-set_from_resource $foreg_main i3wm.color0
-set_from_resource $indic_main i3wm.color15
+set $inact_bord #151515
+set $inact_back #151515
+set $inact_text #151515
+set $inact_indi #151515
+set $inact_chil #151515
 
-set $focus_inac #52525200
-set_from_resource $foreg_inac i3wm.color0
-set_from_resource $indic_inac i3wm.color1
+set $ufocu_bord #151515
+set $ufocu_back #151515
+set $ufocu_text #151515
+set $ufocu_indi #151515
+set $ufocu_chil #151515
 
-set $unfoc_main #151515
-set_from_resource $focus_inac i3wm.color1
-set_from_resource $unfoc_fore i3wm.color1
-set_from_resource $unfoc_bord i3wm.color1
+
 
 # class                  border        background   text         indicator    child_border
-client.focused           $focus_main   $focus_main  $unfoc_main  $indic_main  $focus_main
-client.focused_inactive  $focus_inac   $focus_inac  $unfoc_main  $background  $unfoc_main
-client.unfocused         $unfoc_main   $unfoc_main  $unfoc_fore  $background  $unfoc_main 
+client.focused           $focus_bord   $focus_back  $focus_text  $focus_indi  $focus_chil
+client.focused_inactive  $inact_bord   $inact_back  $inact_text  $inact_indi  $inact_chil
+client.unfocused         $ifocu_bord   $ufocu_back  $ufocu_text  $ufocu_indi  $ufocu_chil 
 client.urgent            #E6847B   #E6847B      #ffffff  #E3E3E3     #E6847B
 client.placeholder       #000000   #0c0c0c      #ffffff  #000000     #0c0c0c
 

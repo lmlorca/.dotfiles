@@ -37,7 +37,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
 
-Plug 'kaicataldo/material.vim'
+Plug 'lmlorca/material.vim', {'branch': 'extra'}
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'dikiaap/minimalist'
