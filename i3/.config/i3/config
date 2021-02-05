@@ -66,14 +66,14 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # Windows, Borders and Gaps
 # Remove titles
-for_window [class="^.*"] border pixel 2 title_format <span font='Noto Sans Medium 10'>    %title</span>
+for_window [class="^.*"] border pixel 1 title_format <span font='Noto Sans Medium 10'>    %title</span>
 
 # Gaps
 gaps inner 10
 gaps outer 0
 
 # smart_gaps on
-smart_borders on
+# smart_borders on
 
 # Floating dialogs
 for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Preview"] floating enable, move up 30px
@@ -81,21 +81,21 @@ for_window [class="Pavucontrol"] floating enable resize set 640 480
 
 
 # Colors
-set $focus_bord #151515
-set $focus_back #151515
+set $focus_bord #a6a6a6
+set $focus_back #a6a6a6
 set $focus_text #151515
-set $focus_indi #151515
-set $focus_chil #ffffff
+set $focus_indi #ffffff
+set $focus_chil #a6a6a6
 
 set $inact_bord #151515
 set $inact_back #151515
-set $inact_text #151515
+set $inact_text #a6a6a6
 set $inact_indi #151515
 set $inact_chil #151515
 
 set $ufocu_bord #151515
 set $ufocu_back #151515
-set $ufocu_text #151515
+set $ufocu_text #a6a6a6
 set $ufocu_indi #151515
 set $ufocu_chil #151515
 
@@ -104,7 +104,7 @@ set $ufocu_chil #151515
 # class                  border        background   text         indicator    child_border
 client.focused           $focus_bord   $focus_back  $focus_text  $focus_indi  $focus_chil
 client.focused_inactive  $inact_bord   $inact_back  $inact_text  $inact_indi  $inact_chil
-client.unfocused         $ifocu_bord   $ufocu_back  $ufocu_text  $ufocu_indi  $ufocu_chil 
+client.unfocused         $ufocu_bord   $ufocu_back  $ufocu_text  $ufocu_indi  $ufocu_chil 
 client.urgent            #E6847B   #E6847B      #ffffff  #E3E3E3     #E6847B
 client.placeholder       #000000   #0c0c0c      #ffffff  #000000     #0c0c0c
 
