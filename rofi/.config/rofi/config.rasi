@@ -1,7 +1,7 @@
 configuration {
  combi-modi: "window,drun";
  modi: "combi,drun,run,ssh";
- theme: "~/.cache/wal/slate-rofi";
- font: "Noto Sans Regular 11";
+ theme: "./slate-rofi";
+ font: "Cantarell Medium 11";
  show-icons: true;
 }

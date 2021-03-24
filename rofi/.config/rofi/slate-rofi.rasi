@@ -1,0 +1,78 @@
+configuration {
+  show-icons: true;
+  /* drun-display-format: "{icon} {name}"; */
+  display-run: " ";
+  display-drun: " ";
+  display-window: " ";
+  modi: "window,run,drun";
+}
+
+* {
+  background-color: #282828;
+  border-color: #282828;
+  text-color: white;
+  spacing: 0;
+  width: 30%;
+  height: 1053px;
+  /* location: north west; */
+  border: 0 0 0 0;
+
+  width: 50%;
+  height: 59%;
+}
+
+window {
+  border-radius: 10px;
+
+margin: 50px;
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [prompt,entry];
+}
+
+prompt {
+  font: "Hack Nerd Font Medium 12";
+  padding: 18px;
+  border: 0 0 0 0;
+  enabled: true;
+  background-color: #353535;
+}
+
+textbox {
+  background-color: #2e343f;
+  padding: 14px;
+}
+
+entry {
+  padding: 18px;
+  background-color: #353535;
+  color: white;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
+  border: 0 1px 0 0;
+}
+
+element {
+  border: 0 0 1px 0;
+  padding: 10px;
+}
+
+element-icon {
+  font: "Hack Nerd Font Medium 15";
+  padding: 0 14px;
+  size: 34px;
+}
+element-text {
+  padding: 14px 0;
+}
+
+element selected {
+  background-color: #15539e;
+  color: white;
+}

@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    // "height": 25,
+    "modules-left": ["sway/window", "sway/mode"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["custom/language", "memory", "cpu", "pulseaudio","clock", "tray"],
+    "sway/workspaces": {
+        "format": "{name}"
+    },
+    "sway/window": {
+        "max-length": 50
+    },
+    "sway/language": {
+        "format": "{}"
+    },
+    "custom/language": {
+        "exec": "swaymsg -t get_inputs | jq -r '.[] | select(.identifier == \"1133:49978:Logitech_G413_Carbon_Mechanical_Gaming_Keyboard\") | .xkb_active_layout_name' | head -n 1",
+        "return-type": "string",
+        "interval": 1,
+        "format": "{}"
+    }
+    ,
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "tray": {
+        "spacing": 14 
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10,
+        "on-click-right": "gnome-system-monitor"
+    },
+    "memory": {
+        "interval": 30,
+        "format": "{}% ",
+        "max-length": 10,
+        "on-click-right": "gnome-system-monitor"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "Muted ﱝ",
+        "format-icons": {
+            "headphone": "x",
+            "hands-free": "x",
+            "headset": "x",
+            "phone": "x",
+            "portable": "x",
+            "car": "x",
+            "default": ["奄", "奔", "墳"]
+
+        },
+        "scroll-step": 1,
+        "on-click": "pamixer -t",
+        "on-click-right": "gnome-control-center sound"
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-theme": "Adwaita",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    }
+}

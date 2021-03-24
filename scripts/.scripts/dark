@@ -4,6 +4,6 @@ wpg -a $1 &&
 wpg -A $PAPE &&
 SCHEME=$(ls /home/lmlorca/.config/wpg/schemes | grep $PAPE) &&
 wal --theme /home/lmlorca/.config/wpg/schemes/$SCHEME -s &&
-/home/lmlorca/.scripts/dark-theme.sh &&
-/home/lmlorca/.scripts/reload-gtk.sh &&
+# /home/lmlorca/.scripts/dark-theme.sh &&
+# /home/lmlorca/.scripts/reload-gtk.sh &&
 notify-send "Wallpaper and Theme updated" $PAPE

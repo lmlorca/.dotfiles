@@ -1,4 +1,5 @@
-set $mod Mod4
+set $mod  Mod4
+set $alt  control
 
 set $left h
 set $down j
@@ -7,10 +8,13 @@ set $right l
 
 set $term alacritty
 
+# set $menu 'rofi -modi run, drun, window  -show drun -m -5'  
+set $menu 'ulauncher'
+
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 floating_modifier $mod normal
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 
@@ -38,62 +42,189 @@ bindsym $mod+e layout toggle split
 
 bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+space focus mode_toggle
+bindsym $mod+$alt+space focus mode_toggle
 
 bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
-bindsym $mod+6 workspace number 6
-bindsym $mod+7 workspace number 7
-bindsym $mod+8 workspace number 8
-bindsym $mod+9 workspace number 9
-bindsym $mod+0 workspace number 10
 
-bindsym $mod+Shift+1 move container to workspace number 1
-bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
-bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number 5
-bindsym $mod+Shift+6 move container to workspace number 6
-bindsym $mod+Shift+7 move container to workspace number 7
-bindsym $mod+Shift+8 move container to workspace number 8
-bindsym $mod+Shift+9 move container to workspace number 9
-bindsym $mod+Shift+0 move container to workspace number 10
+# set $left1 'l:1'
+# set $left2 'l:2'
+# set $left3 'l:3'
+# set $left4 'l:4'
+# set $left5 'l:5'
+# set $left6 'l:6'
+# set $left7 'l:7'
+# set $left8 'l:8'
+# set $left9 'l:9'
+# set $left10 'l:10'
+
+set $0 'c:0'
+set $1 'c:1'
+set $2 'c:2'
+set $3 'c:3'
+set $4 'c:4'
+set $5 'c:5'
+set $6 'c:6'
+set $7 'c:7'
+set $8 'c:8'
+set $9 'c:9'
+set $10 'c:10'
+
+# bindsym $mod+grave workspace $0
+# bindsym $mod+$alt+1 workspace $left1
+# bindsym $mod+$alt+2 workspace $left2
+# bindsym $mod+$alt+3 workspace $left3
+# bindsym $mod+$alt+4 workspace $left4
+# bindsym $mod+$alt+5 workspace $left5
+# bindsym $mod+$alt+6 workspace $left6
+# bindsym $mod+$alt+7 workspace $left7
+# bindsym $mod+$alt+8 workspace $left8
+# bindsym $mod+$alt+9 workspace $left9
+# bindsym $mod+$alt+0 workspace $left10
 
 
+bindsym $mod+dead_grave workspace $0
+bindsym $mod+grave workspace $0
+bindsym $mod+1 workspace $1
+bindsym $mod+2 workspace $2
+bindsym $mod+3 workspace $3
+bindsym $mod+4 workspace $4
+bindsym $mod+5 workspace $5
+bindsym $mod+6 workspace $6
+bindsym $mod+7 workspace $7
+bindsym $mod+8 workspace $8
+bindsym $mod+9 workspace $9
+bindsym $mod+0 workspace $10
 
 
+# bindsym $mod+Shift+$alt+1 move container to workspace $left1
+# bindsym $mod+Shift+$alt+2 move container to workspace $left2
+# bindsym $mod+Shift+$alt+3 move container to workspace $left3
+# bindsym $mod+Shift+$alt+4 move container to workspace $left4
+# bindsym $mod+Shift+$alt+5 move container to workspace $left5
+# bindsym $mod+Shift+$alt+6 move container to workspace $left6
+# bindsym $mod+Shift+$alt+7 move container to workspace $left7
+# bindsym $mod+Shift+$alt+8 move container to workspace $left8
+# bindsym $mod+Shift+$alt+9 move container to workspace $left9
+# bindsym $mod+Shift+$alt+0 move container to workspace $left10
 
+bindsym $mod+Shift+dead_grave move container to workspace $0
+bindsym $mod+Shift+grave move container to workspace $0
+bindsym $mod+Shift+1 move container to workspace $1
+bindsym $mod+Shift+2 move container to workspace $2
+bindsym $mod+Shift+3 move container to workspace $3
+bindsym $mod+Shift+4 move container to workspace $4
+bindsym $mod+Shift+5 move container to workspace $5
+bindsym $mod+Shift+6 move container to workspace $6
+bindsym $mod+Shift+7 move container to workspace $7
+bindsym $mod+Shift+8 move container to workspace $8
+bindsym $mod+Shift+9 move container to workspace $9
+bindsym $mod+Shift+0 move container to workspace $10
+
+
+bindsym $mod+d exec $menu
+
+focus_follows_mouse no
+
+# GNOME
+exec /usr/lib/gsd-xsettings
+exec_always gnome-power-manager
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+bindsym $mod+c exec gnome-control-center
+
+# Monitors
+set $monitor1 "DP-1"
+set $monitor2 "HDMI-A-1"
+output $monitor1 pos 0 0
+output $monitor2 pos 1920 0
+
+# workspace $left1 output $monitor1
+# workspace $left2 output $monitor1
+# workspace $left3 output $monitor1
+# workspace $left4 output $monitor1
+# workspace $left5 output $monitor1
+# workspace $left6 output $monitor1
+# workspace $left7 output $monitor1
+# workspace $left8 output $monitor1
+# workspace $left9 output $monitor1
+# workspace $left10 output $monitor1
+
+workspace $0 output $monitor1
+workspace $1 output $monitor2
+workspace $2 output $monitor2
+workspace $3 output $monitor2
+workspace $4 output $monitor2
+workspace $5 output $monitor2
+workspace $6 output $monitor2
+workspace $7 output $monitor2
+workspace $8 output $monitor2
+workspace $9 output $monitor2
+workspace $10 output $monitor2
+
+# Mouse
+set $mouse "1133:49283:Logitech_G403_Prodigy_Gaming_Mouse"
+input $mouse accel_profile flat
+
+# Keyboard
+input * xkb_layout us,us
+input * xkb_variant intl,
+input * xkb_options grp:win_space_toggle
+
+# Gaps
 default_border pixel 2
+default_floating_border none
 
 smart_gaps on
 smart_borders on
-gaps inner 10
+set $default_gaps 0
+gaps inner $default_gaps
 
+mode "Gaps" {
+    bindsym plus  gaps inner all plus 5
+        bindsym minus gaps inner all minus 5
+        bindsym 0     gaps inner all set $default_gaps
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+        bindsym $mod+g mode "default"
+}
 
-set $cl_high #009ddc
-set $cl_indi #d9d8d8
-set $cl_back #231f20
-set $cl_fore #d9d8d8
-set $cl_urge #ee2e24
+bindsym $mod+g mode "Gaps"
 
-set $fcs_high #ffffff
-set $fcs_fore #000000
-set $fcs_indc #f9ab32
+# Theming
+exec_always $HOME/.scripts/cache-wal.sh
+set $wallpaper $HOME/.cache/wallpaper
 
-set $ina_high #b1b1b1
-set $ina_fore #a0a0a0
+set $fcs_high #15539e
+set $fcs_fore #ffffff
+set $fcs_indc #ffffff
 
-set $ufo_high #000000
-set $ufo_fore #212121
+set $ina_high #353535
+set $ina_fore #ffffff
+
+set $ufo_tibg #282828
+set $ufo_high #181818
+set $ufo_fore #8d8d8c
+
+set $urg_high #9e1515
+set $urg_fore #ffffff
+
+# include ~/.cache/wal/sway
 
 # Colors                border      bg          text        indic       childborder
 client.focused          $fcs_high   $fcs_high   $fcs_fore   $fcs_indc   $fcs_high
 client.focused_inactive $ina_high   $ina_high   $ina_fore   $ina_high   $ina_high
-client.unfocused        $ufo_high   $ufo_high   $ufo_fore   $ufo_high   $ufo_high
-client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
+client.unfocused        $ufo_tibg   $ufo_tibg   $ufo_fore   $ufo_high   $ufo_high
+client.urgent           $urg_high   $urg_high   $urg_fore   $urg_high   $urg_high
+
+output "*" background $wallpaper fill
+
+font pango: Cantarell Bold 10
+
+
+bar {
+    swaybar_command waybar
+}
+
+include /etc/sway/config.d/*
