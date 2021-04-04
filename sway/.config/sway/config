@@ -173,12 +173,12 @@ input * xkb_variant intl,
 input * xkb_options grp:win_space_toggle
 
 # Gaps
-default_border pixel 2
+default_border pixel 1
 default_floating_border none
 
 smart_gaps on
 smart_borders on
-set $default_gaps 0
+set $default_gaps 20
 gaps inner $default_gaps
 
 mode "Gaps" {
@@ -196,8 +196,11 @@ bindsym $mod+g mode "Gaps"
 exec_always $HOME/.scripts/cache-wal.sh
 set $wallpaper $HOME/.cache/wallpaper
 
-set $fcs_high #15539e
-set $fcs_fore #ffffff
+# set $fcs_high #15539e
+# set $fcs_fore #ffffff
+
+set $fcs_high #c8c8c8
+set $fcs_fore #000000
 set $fcs_indc #ffffff
 
 set $ina_high #353535

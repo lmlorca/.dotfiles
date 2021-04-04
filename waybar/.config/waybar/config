@@ -1,9 +1,9 @@
 {
     "layer": "top",
-    "position": "bottom",
+    "position": "top",
     // "height": 25,
-    "modules-left": ["sway/window", "sway/mode"],
-    "modules-center": ["sway/workspaces"],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-center": [],
     "modules-right": ["custom/language", "memory", "cpu", "pulseaudio","clock", "tray"],
     "sway/workspaces": {
         "format": "{name}"

@@ -38,7 +38,7 @@ window:
     y: 10
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
+  dynamic_padding: false
   # Window decorations
   #
   # Values for `decorations`:
@@ -94,6 +94,8 @@ font:
     #   - (Windows) Consolas
     # family: JetBrainsMono Nerd Font
     family: Hack Nerd Font Mono
+    # family: Cozette
+    # family: spectrum berry
     # family: Hack
     # family: FiraCode Nerd Font Mono
     # family: Courier Prime Code
@@ -267,7 +269,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-# background_opacity: 0.9
+background_opacity: 0.9
 #selection: #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 # When set to `true`, selected text will be copied to the primary clipboard.
 #save_to_clipboard: false

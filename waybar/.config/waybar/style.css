@@ -3,9 +3,12 @@
   border-radius: 0;
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: Cantarell;
+  /* font-family: spectrum berry; */
+  /* font-family: Cozette; */
   font-weight: 700;
-  min-height: 24px;
-  padding: 1px;
+  min-height: 25px;
+  /* min-height: 24px; */
+  /* padding: 1px; */
 }
 
 window#waybar {
@@ -41,8 +44,8 @@ window#waybar.chromium {
 
 #workspaces button {
   padding: 0 5px;
-  margin: 0 2px;
-  border-radius: 50%;
+  /* margin: 0 2px; */
+  /* border-radius: 5%; */
   background-color: transparent;
   color: #ffffff;
   /* font-size: 12px; */
@@ -67,7 +70,7 @@ window#waybar.chromium {
 #mode {
   background-color: #474747;
   padding: 0 5px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 #custom-language,
