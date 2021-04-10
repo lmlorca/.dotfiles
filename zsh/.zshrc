@@ -1,3 +1,9 @@
+PF_DISTRO[1]="arch"
+PF_DISTRO[2]="gnu"
+PF_DISTRO[3]="linux"
+PF_DISTRO_RANDOM=$((1 + $RANDOM % 3))
+export PF_ASCII=$PF_DISTRO[$PF_DISTRO_RANDOM]
+pfetch
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -9,6 +15,8 @@ export ZSH="/home/lmlorca/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="alanpeabody"
+PROMPT='$'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

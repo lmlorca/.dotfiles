@@ -34,6 +34,7 @@ Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'glepnir/galaxyline.nvim', { 'branch': 'main'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
 
@@ -52,5 +53,9 @@ Plug 'markvincze/panda-vim'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'richtan/pywal.vim'
 Plug 'dylanaraps/wal.vim'
+
+Plug 'jdsimcoe/abstract.vim'
+Plug 'jaredgorski/fogbell.vim'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()

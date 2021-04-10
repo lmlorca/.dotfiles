@@ -43,9 +43,14 @@ source $HOME/.config/nvim/config/plugins/javascript.vim
 " Airline
 source $HOME/.config/nvim/config/themes/airline.vim
 
+" GalaxyLine
+" lua require('init')
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Theming
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" Base 16
+" source $HOME/.config/nvim/config/themes/base16.vim
 
 " Material
 source $HOME/.config/nvim/config/themes/material.vim
@@ -69,5 +74,11 @@ source $HOME/.config/nvim/config/themes/material.vim
 " Wpgtk
 " source $HOME/.config/nvim/config/themes/wpg.vim
 
+" wal
+" source $HOME/.config/nvim/config/themes/wpg.vim
+
 " Global
 source $HOME/.config/nvim/config/themes/global.vim
+
+" Transparentize
+source $HOME/.config/nvim/config/themes/transparent.vim
