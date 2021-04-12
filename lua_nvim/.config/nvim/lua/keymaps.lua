@@ -1,13 +1,5 @@
 vim.g.mapleader = " "
 
-function imap(arg1, arg2)
-	vim.api.nvim_set_keymap('i', arg1, arg2, { noremap = true, silent = true })
-end
-
-function nmap(arg1, arg2)
-	vim.api.nvim_set_keymap('n', arg1, arg2, { noremap = true, silent = true })
-end
-
 -- Reload Config
 -- nmap('<leader>r', ':so $HOME/.config/nvim/init.lua<CR>')
 

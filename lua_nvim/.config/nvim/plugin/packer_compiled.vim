@@ -32,6 +32,22 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  neoformat = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/neoformat"
+  },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
