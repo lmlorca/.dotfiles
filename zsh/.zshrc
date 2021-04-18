@@ -1,9 +1,17 @@
+# (cat ~/.cache/wal/sequences &)
 PF_DISTRO[1]="arch"
 PF_DISTRO[2]="gnu"
 PF_DISTRO[3]="linux"
 PF_DISTRO_RANDOM=$((1 + $RANDOM % 3))
 export PF_ASCII=$PF_DISTRO[$PF_DISTRO_RANDOM]
-pfetch
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+# pfetch
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -119,7 +127,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ### Begin custom
-alias vim=nvim
+# alias vim=nvim
 alias yaru=~/.scripts/yaru
 
 # Set Neovim as default editor

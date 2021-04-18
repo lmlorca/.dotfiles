@@ -173,12 +173,12 @@ input * xkb_variant intl,
 input * xkb_options grp:win_space_toggle
 
 # Gaps
-default_border pixel 2
+default_border pixel 1
 default_floating_border none
 
-smart_gaps on
-smart_borders on
-set $default_gaps 10
+# smart_gaps on
+# smart_borders on
+set $default_gaps 20
 gaps inner $default_gaps
 
 mode "Gaps" {
@@ -195,7 +195,7 @@ bindsym $mod+g mode "Gaps"
 # Theming
 # exec_always $HOME/.scripts/cache-wal.sh
 exec_always $HOME/.scripts/wal/gnome-desktop-picture-uri.sh
-set $wallpaper $HOME/.cache/wallpaper
+set $wallpaper "$HOME/.cache/wallpaper"
 
 # set $fcs_high #15539e
 # set $fcs_fore #ffffff
@@ -214,7 +214,7 @@ set $ufo_fore #8d8d8c
 set $urg_high #9e1515
 set $urg_fore #ffffff
 
-# include ~/.cache/wal/sway
+include ~/.cache/wal/sway
 
 # Colors                border      bg          text        indic       childborder
 client.focused          $fcs_high   $fcs_high   $fcs_fore   $fcs_indc   $fcs_high
