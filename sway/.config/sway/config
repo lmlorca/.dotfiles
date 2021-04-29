@@ -6,10 +6,8 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty
-
-# set $menu 'rofi -modi run, drun, window  -show drun -m -5'  
-set $menu 'ulauncher'
+set $term kitty
+set $menu dmenu_path | dmenu -h 25 -nb "#000000" -nf "#ffffff" -sb "$fcs_high" -fn Cantarell-10:bold | xargs swaymsg exec --
 
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
@@ -122,18 +120,6 @@ bindsym $mod+Shift+8 move container to workspace $8
 bindsym $mod+Shift+9 move container to workspace $9
 bindsym $mod+Shift+0 move container to workspace $10
 
-
-bindsym $mod+d exec $menu
-
-focus_follows_mouse no
-
-# GNOME
-exec /usr/lib/gsd-xsettings
-exec_always gnome-power-manager
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
-bindsym $mod+c exec gnome-control-center
-
 # Monitors
 set $monitor1 "DP-1"
 set $monitor2 "HDMI-A-1"
@@ -163,6 +149,20 @@ workspace $8 output $monitor2
 workspace $9 output $monitor2
 workspace $10 output $monitor2
 
+bindsym $mod+d exec $menu
+
+# Mouse
+set $mouse "1133:49283:Logitech_G403_Prodigy_Gaming_Mouse"
+input $mouse accel_profile flat
+focus_follows_mouse no
+
+# GNOME
+exec /usr/lib/gsd-xsettings
+exec_always gnome-power-manager
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+bindsym $mod+c exec gnome-control-center
+
 # Mouse
 set $mouse "1133:49283:Logitech_G403_Prodigy_Gaming_Mouse"
 input $mouse accel_profile flat
@@ -173,7 +173,7 @@ input * xkb_variant intl,
 input * xkb_options grp:win_space_toggle
 
 # Gaps
-default_border pixel 1
+default_border pixel 2
 default_floating_border none
 
 # smart_gaps on
@@ -193,13 +193,13 @@ mode "Gaps" {
 bindsym $mod+g mode "Gaps"
 
 # Theming
-# exec_always $HOME/.scripts/cache-wal.sh
 exec_always $HOME/.scripts/wal/gnome-desktop-picture-uri.sh
 set $wallpaper "$HOME/.cache/wallpaper"
 
 # set $fcs_high #15539e
 # set $fcs_fore #ffffff
 
+set $fcs_tibg #c8c8c8
 set $fcs_high #c8c8c8
 set $fcs_fore #000000
 set $fcs_indc #ffffff
@@ -217,7 +217,7 @@ set $urg_fore #ffffff
 include ~/.cache/wal/sway
 
 # Colors                border      bg          text        indic       childborder
-client.focused          $fcs_high   $fcs_high   $fcs_fore   $fcs_indc   $fcs_high
+client.focused          $fcs_tibg   $fcs_high   $fcs_fore   $fcs_indc   $fcs_high
 client.focused_inactive $ina_high   $ina_high   $ina_fore   $ina_high   $ina_high
 client.unfocused        $ufo_tibg   $ufo_tibg   $ufo_fore   $ufo_high   $ufo_high
 client.urgent           $urg_high   $urg_high   $urg_fore   $urg_high   $urg_high

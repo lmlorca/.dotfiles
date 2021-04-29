@@ -18,94 +18,247 @@
 require'bufferline'.setup{
   options = {
     diagnostics = "nvim_lsp",
+    separator_style = {"", ""},
   },
   highlights = {
-    buffer_selected = {
-      gui = "bold"
+    -- Bufferline background
+    fill = {
+      guibg = {
+        attribute = "fg",
+        highlight = "VertSplit"
+      },
     },
-    diagnostic_selected = {
+    -- Visible buffers??
+    background = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+    },
+    buffer_selected = {
+      gui = "bold",
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
+    },
+    buffer_visible = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+    },
+    -- Tabs
+    tab = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+    },
+    tab_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
+    },
+    -- Separators
+    separator = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "VertSplit"
+      },
+    },
+    separator_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "VertSplit"
+      },
+    },
+    separator_visible = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "VertSplit"
+      },
+    },
+    -- Indicator
+    indicator_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
       guifg = {
         attribute = "bg",
-        highlight = "WildMenu"
+        highlight = "Visual"
       },
-      gui = "bold"
     },
-    warning = {
-      guifg = {
-        attribute = "fg",
-        highlight = "DiffChange"
-      }
-    },
-    warning_selected = {
-      guifg = {
-        attribute = "fg",
-        highlight = "DiffChange"
-      },
-      gui = "bold"
-    },
-    warning_visible = {
-      guifg = {
-        attribute = "fg",
-        highlight = "DiffChange"
-      }
-    },
-    warning_diagnostic = {
-      guifg = {
-        attribute = "fg",
-        highlight = "DiffChange"
-      }
-    },
-    warning_diagnostic_selected = {
-      guifg = {
-        attribute = "fg",
-        highlight = "DiffChange"
-      },
-      gui = "bold"
-    },
-    warning_diagnostic_visible = {
-      guifg = {
-        attribute = "fg",
-        highlight = "DiffChange"
-      }
-    },
+    -- Status
     error = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "Comment"
+      }
+    },
+    error_visible = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "Comment"
+      }
+    },
+    error_diagnostic_visible = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
       guifg = {
         attribute = "bg",
         highlight = "ErrorMsg"
       }
     },
     error_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
       guifg = {
         attribute = "bg",
         highlight = "ErrorMsg"
       },
       gui = "bold"
     },
-    error_visible = {
-      guifg = {
-        attribute = "bg",
-        highlight = "ErrorMsg"
-      }
-    },
     error_diagnostic = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
       guifg = {
         attribute = "bg",
         highlight = "ErrorMsg"
       }
     },
     error_diagnostic_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
       guifg = {
         attribute = "bg",
         highlight = "ErrorMsg"
       },
       gui = "bold"
     },
-    error_diagnostic_visible = {
+    warning = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "Comment"
+      }
+    },
+    warning_visible = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "Comment"
+      }
+    },
+    warning_diagnostic_visible = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "DiffChange"
+      }
+    },
+    warning_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "DiffChange"
+      },
+      gui = "bold"
+    },
+    warning_diagnostic = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "DiffChange"
+      }
+    },
+    warning_diagnostic_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
+      guifg = {
+        attribute = "fg",
+        highlight = "DiffChange"
+      },
+      gui = "bold"
+    },
+    diagnostic = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
       guifg = {
         attribute = "bg",
-        highlight = "ErrorMsg"
+        highlight = "WildMenu"
       }
-    }
+    },
+    diagnostic_visible = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Normal"
+      },
+      guifg = {
+        attribute = "bg",
+        highlight = "WildMenu"
+      }
+    },
+    diagnostic_selected = {
+      guibg = {
+        attribute = "bg",
+        highlight = "Visual"
+      },
+      guifg = {
+        attribute = "bg",
+        highlight = "WildMenu"
+      },
+      gui = "bold"
+    },
   }
 }
 

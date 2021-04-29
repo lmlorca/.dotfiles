@@ -34,4 +34,4 @@ opt('b', 'swapfile', false)
 -- hide line numbers in terminal windows
 vim.api.nvim_exec([[
    au BufEnter term://* setlocal nonumber
-]], true)
+]], false)

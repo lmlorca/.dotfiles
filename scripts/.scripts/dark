@@ -3,7 +3,8 @@ PAPE=$(basename $1) &&
 wpg -a $1 &&
 wpg -A $PAPE &&
 SCHEME=$(ls /home/lmlorca/.config/wpg/schemes | grep $PAPE) &&
-wal --theme /home/lmlorca/.config/wpg/schemes/$SCHEME -s -t  -b '#141414' &&
+wal --theme /home/lmlorca/.config/wpg/schemes/$SCHEME -b '#141414' &&
+feh --bg-fill $PAPE &&
 # /home/lmlorca/.scripts/dark-theme.sh &&
 # /home/lmlorca/.scripts/reload-gtk.sh &&
 notify-send "Wallpaper and Theme updated" $PAPE

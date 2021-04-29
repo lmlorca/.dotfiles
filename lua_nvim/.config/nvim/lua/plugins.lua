@@ -13,6 +13,10 @@ require('packer').startup(function()
 	use 'kabouzeid/nvim-lspinstall'
   use 'hrsh7th/nvim-compe'
 
+  -- Utils
+  use "liuchengxu/vim-which-key"
+  use "akinsho/nvim-toggleterm.lua"
+
   -- Text formating
   use 'sbdchd/neoformat'
   use 'tpope/vim-commentary'
@@ -61,6 +65,7 @@ require('plugins/indentLine')
 require('plugins/tree')
 require('plugins/bufferline')
 require('plugins/galaxy')
+require('plugins/toggleterm')
 
 -- Other plugins setup
 -- TS Context Commentstring

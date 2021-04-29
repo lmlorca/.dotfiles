@@ -1,6 +1,6 @@
 require('colorscheme')
 require('util')
-require('settings')
 require('keymaps')
+require('settings')
 require('plugins')
 require('lsp')

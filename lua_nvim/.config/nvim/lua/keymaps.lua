@@ -34,8 +34,8 @@ nmap('<A-k>', ':bn<CR>')
 nmap('<A-x>', ':bd!<CR>')
 
 -- Tab navigation
-nmap('<A-h>', 'tabp<CR>')
-nmap('<A-l>', 'tabn<CR>')
+nmap('<A-h>', ':tabp<CR>')
+nmap('<A-l>', ':tabn<CR>')
 
 -- Terminal
 nmap('tt', '<Cmd>vnew term://zsh<CR>')

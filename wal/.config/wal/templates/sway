@@ -22,9 +22,10 @@ set $color15 {color15}
 
 # Sway Vars
 
-set $fcs_high {color9}
-set $fcs_fore #ffffff
-set $fcs_indc #ffffff
+set $fcs_tibg {color9}
+set $fcs_high {color1}
+set $fcs_fore {color15}
+set $fcs_indc {color11}
 
 set $ina_high #353535
 set $ina_fore #ffffff
