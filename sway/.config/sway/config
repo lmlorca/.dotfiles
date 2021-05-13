@@ -172,12 +172,15 @@ input * xkb_layout us,us
 input * xkb_variant intl,
 input * xkb_options grp:win_space_toggle
 
+# Effects
+exec_always $HOME/.scripts/flashfocus.sh
+
 # Gaps
 default_border pixel 2
 default_floating_border none
 
-# smart_gaps on
-# smart_borders on
+smart_gaps on
+smart_borders on
 set $default_gaps 20
 gaps inner $default_gaps
 

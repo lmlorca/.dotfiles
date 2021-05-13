@@ -19,6 +19,7 @@ g.splitright = true
 g.smarttab = true
 g.mouse = 'a'
 g.hidden = true
+g.shortmess = g.shortmess .. "c"
 
 w.number = true
 w.relativenumber = true

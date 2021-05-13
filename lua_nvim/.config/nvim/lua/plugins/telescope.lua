@@ -3,6 +3,7 @@ function nmap(arg1, arg2)
 end
 
 nmap('<C-p>', "<cmd>lua require('telescope.builtin').find_files()<cr>")
+nmap('FF', "<cmd>lua require('telescope.builtin').find_files()<cr>")
 nmap('FG', "<cmd>lua require('telescope.builtin').live_grep()<cr>")
 nmap('FB', "<cmd>lua require('telescope.builtin').buffers()<cr>")
 nmap('FH', "<cmd>lua require('telescope.builtin').help_tags()<cr>")

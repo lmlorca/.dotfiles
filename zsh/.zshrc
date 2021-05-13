@@ -5,13 +5,15 @@ PF_DISTRO[3]="linux"
 PF_DISTRO_RANDOM=$((1 + $RANDOM % 3))
 export PF_ASCII=$PF_DISTRO[$PF_DISTRO_RANDOM]
 
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+# Open new terminal in same directory as last terminal:
+function cd {
+        builtin cd $@
+        echo $(pwd) > ~/.last_dir
+}
+if [ -f ~/.last_dir ]; then
+        cd "`cat ~/.last_dir`"
+fi
 
-# pfetch
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 

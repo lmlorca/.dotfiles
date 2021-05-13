@@ -39,3 +39,7 @@ nmap('<A-l>', ':tabn<CR>')
 
 -- Terminal
 nmap('tt', '<Cmd>vnew term://zsh<CR>')
+
+-- Better better complete navigation
+vim.cmd('inoremap <expr> <c-j> (\"\\<C-n>\")')
+vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')

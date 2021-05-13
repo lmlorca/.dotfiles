@@ -17,17 +17,22 @@
 ;==========================================================
 
 [colors]
-background = #000000
+background = #080808
+background2 = #212121
+background3 = ${xrdb:color8:#222}
 ;background = #E6181818
+background-alt = ${xrdb:color9:#222}
 foreground = #ffffff
-primary = ${xrdb:color1}
+foreground-alt= ${xrdb:color9:#222}
+foreground-alt2 = #080808
+primary = ${xrdb:color9}
 secondary = ${xrdb:color14}
 alert = ${xrdb:color14}
 
 [bar/example]
 monitor = ${env:MONITOR:HDMI-A-0}
 width = 100%
-height = 25
+height = 27
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -47,8 +52,8 @@ border-color = #141414
 padding-left = 0
 padding-right = 0
 
-module-margin-left = 4
-module-margin-right = 4
+module-margin-left = 1
+module-margin-right = 2
 
 font-0 = Cantarell:style=Bold:pixelsize=10:antialias=true;2
 font-1 = Hack Nerd Font:pixelsize=9.5:antialias=true;2
@@ -57,7 +62,7 @@ font-1 = Hack Nerd Font:pixelsize=9.5:antialias=true;2
 ;modules-left = spectrwm bspwm i3
 modules-left = bspwm i3 xwindow
 ;modules-center = mpd
-modules-right = backlight-acpi pulseaudio memory cpu networkup networkdown wifiup wifidown xkeyboard date
+modules-right = backlight-acpi pulseaudio memory cpu networkup networkdown wifiup wifidown temperature xkeyboard date
 
 tray-position = right
 tray-padding = 10
@@ -82,7 +87,7 @@ bottom = false
 type = custom/text
 content = 
 content-padding = 2
-content-foreground = ${colors.background}
+content-foreground = ${colors.background-alt}
 click-left = exec rofi -show drun
 click-right = exec rofi -show window
 
@@ -96,7 +101,7 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-prefix = "   "
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = ${colors.foreground-alt}
 
 label-layout = %name%
 
@@ -104,7 +109,7 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-foreground = ${colors.background}
-; label-indicator-underline = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
@@ -114,7 +119,7 @@ mount-0 = /
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground}
+label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/i3]
 type = internal/i3
@@ -126,22 +131,22 @@ strip-wsnumbers = true
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
 
-label-mode-padding = 4
-label-mode-foreground = ${colors.foreground}
+label-mode-padding = 2
+label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-background = ${colors.primary}
+label-focused-background = #222
 label-focused-foreground = #ffffff
 label-focused-padding = 4
-; label-focused-overline = ${colors.background}
-; label-focused-underline = #222
+label-focused-overline = ${colors.background-alt}
+label-focused-underline = #222
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
 label-unfocused-padding = 4
-label-unfocused-background = ${colors.background}
+label-unfocused-background = #111111
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
@@ -152,7 +157,7 @@ label-visible-padding = ${self.label-focused-padding}
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 3
+label-urgent-padding = 4
 
 ; Separator in between workspaces
 ; label-separator = |

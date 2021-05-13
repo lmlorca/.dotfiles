@@ -12,6 +12,9 @@ require('packer').startup(function()
 	use 'neovim/nvim-lspconfig'
 	use 'kabouzeid/nvim-lspinstall'
   use 'hrsh7th/nvim-compe'
+  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
 
   -- Utils
   use "liuchengxu/vim-which-key"
@@ -23,12 +26,12 @@ require('packer').startup(function()
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Syntax highlighting
-  -- use 'sheerun/vim-polyglot'
-  use 'lmlorca/nvim-treesitter'
 	-- use "nvim-treesitter/nvim-treesitter"
+  use 'lmlorca/nvim-treesitter'
   use 'nvim-treesitter/playground'
   use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
   use "norcalli/nvim-colorizer.lua"
+  -- use 'sheerun/vim-polyglot'
 
   -- Navigation
 	use {
@@ -61,6 +64,7 @@ require('plugins/treesitter')
 require('plugins/telescope')
 require('plugins/neoformat')
 require('plugins/compe')
+require('plugins/autopairs')
 require('plugins/indentLine')
 require('plugins/tree')
 require('plugins/bufferline')
@@ -74,6 +78,8 @@ require('nvim-treesitter.configs').setup {
     enable = true
   }
 }
+-- Autotag
+require('nvim-ts-autotag').setup()
 -- require('bufferline').setup{}
 require('colorizer').setup()
 require('neoscroll').setup({

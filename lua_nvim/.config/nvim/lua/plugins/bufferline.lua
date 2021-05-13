@@ -24,8 +24,8 @@ require'bufferline'.setup{
     -- Bufferline background
     fill = {
       guibg = {
-        attribute = "fg",
-        highlight = "VertSplit"
+        attribute = "bg",
+        highlight = "Normal"
       },
     },
     -- Visible buffers??

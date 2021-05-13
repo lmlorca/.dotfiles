@@ -99,6 +99,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+  },
   ["nvim-bufferline.lua"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
@@ -110,6 +114,10 @@ _G.packer_plugins = {
   ["nvim-compe"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-lsp-ts-utils"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -130,6 +138,10 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
   },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,

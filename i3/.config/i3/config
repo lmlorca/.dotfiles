@@ -127,20 +127,26 @@ workspace $10 output $monitor2
 bindsym $mod+d exec --no-startup-id $menu
 focus_follows_mouse no
 
+# Keyboard
+exec_always --no-startup-id setxkbmap -layout us,us -variant intl, -option grp:win_space_toggle
+
 # GNOME
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-bindsym $mod+c exec gnome-control-center
+bindsym $mod+c exec --no-startup-id gnome-control-center
 
 # Compositor
 exec_always --no-startup-id $HOME/.scripts/picom.sh
 exec_always --no-startup-id $HOME/.scripts/flashfocus.sh
 
+# pywall
+exec_always --no-startup-id wal -R
+
 # Gaps
 font pango: Cantarell Bold 12
-for_window [class="^.*"] border pixel 1 title_format <span font='Cantarell Bold 10'>    %title</span>
+for_window [class="^.*"] border pixel 2 title_format <span font='Cantarell Bold 10'>    %title</span>
 default_floating_border none
 
 # smart_gaps on
@@ -170,15 +176,12 @@ bindsym $mod+n exec --no-startup-id flash_window
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 
-# start a terminal
-bindsym $mod+Shift+Return exec --no-startup-id alacritty -e nvim -c VimwikiIndex
-
-bindsym $mod+Shift+f exec nemo
-bindsym $mod+b exec firefox
-bindsym $mod+r exec --no-startup-id alacritty -e ranger
-bindsym $mod+Shift+v exec --no-startup-id pavucontrol
-bindsym $mod+Shift+u exec setxkbmap -layout us
-bindsym $mod+Shift+y exec setxkbmap -layout es
+#bindsym $mod+Shift+f exec nemo
+#bindsym $mod+b exec firefox
+#bindsym $mod+r exec --no-startup-id alacritty -e ranger
+#bindsym $mod+Shift+v exec --no-startup-id pavucontrol
+#bindsym $mod+Shift+u exec setxkbmap -layout us
+#bindsym $mod+Shift+y exec setxkbmap -layout es
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
