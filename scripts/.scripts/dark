@@ -1,11 +1,18 @@
 #!/bin/bash
-PAPE=$(basename $1) &&
-wpg -a $1 &&
-wpg -A $PAPE &&
-SCHEME=$(ls /home/lmlorca/.config/wpg/schemes | grep $PAPE) &&
+PAPE=$(basename "$1") &&
+PAPEWPGUNDERSCORES="${PAPE// /_}"
+echo $PAPEWPGUNDERSCORES &&
+wpg -a "$1" &&
+echo "WPG: Created color-scheme" &&
+wpg -A $PAPEWPGUNDERSCORES &&
+echo "WPG: Auto-adjusted color-scheme" &&
+SCHEME=$(ls /home/lmlorca/.config/wpg/schemes | grep $PAPEWPGUNDERSCORES) &&
 # wal --theme /home/lmlorca/.config/wpg/schemes/$SCHEME -b '#1e1e1e' &&
 wal --theme /home/lmlorca/.config/wpg/schemes/$SCHEME -s -t -b '#1e1e1e' &&
-feh --bg-fill $PAPE &&
+echo "WAL: Set wallpaper and colorscheme" &&
+echo "====================================================================" &&
+echo $1
+feh --bg-fill $1 &&
 # /home/lmlorca/.scripts/dark-theme.sh &&
 # /home/lmlorca/.scripts/reload-gtk.sh &&
-notify-send "Wallpaper and Theme updated" $PAPE
+# notify-send "Wallpaper and Theme updated" $PAPE

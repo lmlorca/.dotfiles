@@ -1,0 +1,19 @@
+#! /bin/node
+
+// Chorrada que crea un archivo 'system-info' con información chorra
+
+const os = require("os");
+const fs = require("fs");
+
+const { username, shell } = os.userInfo();
+
+const systemInfo = `
+User: ${username}
+Shell: ${shell}
+OS: ${os.type()}
+Kernel: ${os.release()}
+`;
+
+fs.writeFile("./system-info", systemInfo, () => {
+  console.log("File written.");
+});

@@ -27,7 +27,7 @@ require('packer').startup(function()
 
   -- Syntax highlighting
 	-- use "nvim-treesitter/nvim-treesitter"
-  use 'lmlorca/nvim-treesitter'
+  use { 'lmlorca/nvim-treesitter', branch = 'tag-attribute' }
   use 'nvim-treesitter/playground'
   use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
   use "norcalli/nvim-colorizer.lua"

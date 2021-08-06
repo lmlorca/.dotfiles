@@ -26,7 +26,7 @@ export ZSH="/home/lmlorca/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME="alanpeabody"
-PROMPT='$'
+# PROMPT='$ '
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,7 +92,7 @@ plugins=(
   git
   vi-mode
   command-not-found
-  zsh-interactive-cd
+  # zsh-interactive-cd
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
@@ -131,6 +131,7 @@ source $ZSH/oh-my-zsh.sh
 ### Begin custom
 # alias vim=nvim
 alias yaru=~/.scripts/yaru
+alias update='yay --editmenu -Syyuu'
 
 # Set Neovim as default editor
 export VISUAL=nvim

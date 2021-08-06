@@ -40,7 +40,8 @@ bindsym $mod+e layout toggle split
 
 bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+$alt+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
+# bindsym $mod+$alt+space focus mode_toggle
 
 bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
@@ -126,6 +127,11 @@ set $monitor2 "HDMI-A-1"
 output $monitor1 pos 0 0
 output $monitor2 pos 1920 0
 
+output $monitor2 mode 1920x1080@74.91Hz
+
+# freesync
+# output * adaptive_sync on
+
 # workspace $left1 output $monitor1
 # workspace $left2 output $monitor1
 # workspace $left3 output $monitor1
@@ -163,6 +169,9 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 bindsym $mod+c exec gnome-control-center
 
+# xdg-desktop-portal-wlr
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 # Mouse
 set $mouse "1133:49283:Logitech_G403_Prodigy_Gaming_Mouse"
 input $mouse accel_profile flat
@@ -181,7 +190,7 @@ default_floating_border none
 
 smart_gaps on
 smart_borders on
-set $default_gaps 20
+set $default_gaps 0
 gaps inner $default_gaps
 
 mode "Gaps" {

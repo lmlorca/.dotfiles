@@ -6,6 +6,7 @@ vim.cmd('let g:material_theme_style = "darker"')
 vim.cmd('let g:material_terminal_italics = 1')
 vim.cmd('let base16colorspace=256')
 vim.cmd('colorscheme material')
+-- vim.cmd('colorscheme wpgtkAlt')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 
 
