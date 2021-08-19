@@ -77,9 +77,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["nvim-base16.lua"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-base16.lua"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -96,6 +104,10 @@ _G.packer_plugins = {
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["telescope-fzy-native.nvim"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
