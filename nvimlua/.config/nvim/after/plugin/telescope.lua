@@ -127,7 +127,7 @@ require('telescope').setup {
 
 require('telescope').load_extension('fzy_native')
 
-map('n', '<C-f>', "<cmd>lua require('telescope.builtin').find_files({ hidden = true, no_ignore = true })<cr>")
+map('n', '<C-f>', "<cmd>lua require('telescope.builtin').find_files({ no_ignore = true })<cr>")
 map('n', '<C-p>', "<cmd>lua require('telescope.builtin').git_files()<cr>")
 map('n', '<C-g>', "<cmd>lua require('telescope.builtin').live_grep()<cr>")
 map('n', 'gd', "<cmd>lua require('telescope.builtin').lsp_definitions()<cr>")
