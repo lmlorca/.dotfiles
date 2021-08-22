@@ -40,16 +40,11 @@ require('packer').startup(
 
     -- Aesthetic
     use 'lukas-reineke/indent-blankline.nvim'
-    use 'projekt0n/github-nvim-theme'
-    use 'marko-cerovac/material.nvim'
-    use 'tomasiser/vim-code-dark'
-    use 'ishan9299/modus-theme-vim'
     use 'RRethy/nvim-base16'
     use {
       'hoob3rt/lualine.nvim',
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
-    use 'norcalli/nvim-base16.lua'
 
   end
 )
