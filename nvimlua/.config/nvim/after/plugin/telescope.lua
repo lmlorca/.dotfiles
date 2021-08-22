@@ -37,6 +37,12 @@ require('telescope').setup {
       results_title = '',
       prompt_prefix = " file: ",
     },
+    git_files = {
+      previewer = false,
+      prompt_title = '',
+      results_title = '',
+      prompt_prefix = " git file: ",
+    },
     live_grep = {
       layout_strategy = 'bottom_pane',
       prompt_title = '',
@@ -122,6 +128,7 @@ require('telescope').setup {
 require('telescope').load_extension('fzy_native')
 
 map('n', '<C-f>', "<cmd>lua require('telescope.builtin').find_files()<cr>")
+map('n', '<C-p>', "<cmd>lua require('telescope.builtin').git_files()<cr>")
 map('n', '<C-g>', "<cmd>lua require('telescope.builtin').live_grep()<cr>")
 map('n', 'gd', "<cmd>lua require('telescope.builtin').lsp_definitions()<cr>")
 map('n', 'gr', "<cmd>lua require('telescope.builtin').lsp_references()<cr>")

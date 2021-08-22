@@ -69,10 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/github-nvim-theme"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
@@ -80,14 +76,6 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["material.nvim"] = {
-    loaded = true,
-    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/material.nvim"
-  },
-  ["modus-theme-vim"] = {
-    loaded = true,
-    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/modus-theme-vim"
   },
   ["neoscroll.nvim"] = {
     loaded = true,
@@ -100,10 +88,6 @@ _G.packer_plugins = {
   ["nvim-base16"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-base16"
-  },
-  ["nvim-base16.lua"] = {
-    loaded = true,
-    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-base16.lua"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
@@ -160,10 +144,6 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/telescope.nvim"
-  },
-  ["vim-code-dark"] = {
-    loaded = true,
-    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/vim-code-dark"
   },
   ["vim-commentary"] = {
     loaded = true,

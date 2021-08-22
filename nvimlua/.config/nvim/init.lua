@@ -29,6 +29,7 @@ set.splitright = true
 set.clipboard = 'unnamedplus'
 set.hidden = true
 set.lazyredraw = true
+set.mouse = 'a'
 set.showmode = false
 set.termguicolors = true
 set.title = true
