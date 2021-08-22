@@ -102,7 +102,7 @@ require('telescope').setup {
       layout_strategy = 'bottom_pane',
       prompt_title = '',
       results_title = '',
-      prompt_prefix = " references: ",
+      prompt_prefix = " symbols: ",
       borderchars = {
         prompt = {"─", " ", " ", " ", "─", "─", "─", "─"},
         results = {" ", " ", " ", " ", " ", " ", " ", " "},
