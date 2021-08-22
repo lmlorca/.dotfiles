@@ -73,13 +73,45 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/github-nvim-theme"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/material.nvim"
+  },
+  ["modus-theme-vim"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/modus-theme-vim"
+  },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+  },
+  ["nvim-base16"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-base16"
+  },
   ["nvim-base16.lua"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-base16.lua"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+  },
+  ["nvim-compe"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -89,9 +121,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -100,6 +144,10 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -112,6 +160,22 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-code-dark"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/vim-code-dark"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/vim-commentary"
+  },
+  ["vim-sneak"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/vim-sneak"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/lmlorca/.local/share/nvim/site/pack/packer/start/vim-surround"
   }
 }
 

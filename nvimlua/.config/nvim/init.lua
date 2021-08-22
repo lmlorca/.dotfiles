@@ -37,6 +37,14 @@ set.backup = false
 set.swapfile = false
 set.writebackup = false
 
+set.timeoutlen = 500
+
+-- Autoformat on save
+vim.cmd('autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.html lua vim.lsp.buf.formatting_sync(nil, 1000)')
+
+-- Highlight Yank
+vim.cmd('au TextYankPost * silent! lua vim.highlight.on_yank()')
+
 -- Mappings
 map('i', 'jj', '<Esc>')
 map('i', 'jk', '<Esc>')
