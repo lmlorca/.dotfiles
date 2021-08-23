@@ -22,13 +22,6 @@ b16.highlight.CompeDocumentation = { guifg = c.base0C, guibg = nil, gui = 'none'
 b16.highlight.PMenuSel = { guifg = c.base00, guibg = c.base0C, gui = 'none', guisp = nil  }
 b16.highlight.Sneak = { guifg = c.base00, guibg = c.base0C, gui = 'none', guisp = nil  }
 
-
---vim.cmd('highlight TSOperator guifg=#88c0d0')
---vim.cmd('highlight TSTagAttribute guifg=#b48ead')
---vim.cmd('highlight TSPunctBracket guifg=#646464')
---vim.cmd('highlight TSPunctDelimiter guifg=#484848')
-
-
 -- monokai pro 16
 --local monokai_pro_16 = {
 --    base00 = '#1e1e1e', base01 = '#121212', base02 = '#8b888f', base03 = '#69676c',

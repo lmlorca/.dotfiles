@@ -15,3 +15,5 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     }
 )
 
+-- nvim-colorizer
+require'colorizer'.setup()
