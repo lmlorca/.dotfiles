@@ -134,6 +134,8 @@ source $ZSH/oh-my-zsh.sh
 alias yaru=~/.scripts/yaru
 alias update='yay --editmenu -Syyuu'
 alias nvimconf='cd ~/.config/nvim && nvim init.lua'
+alias dots='cd ~/.dotfiles && nvim'
+alias tbc='nvim ~/Dropbox/tbc.md'
 
 # Set Neovim as default editor
 export VISUAL=nvim

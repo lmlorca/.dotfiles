@@ -92,9 +92,9 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font
+    # family: JetBrainsMono Nerd Font
     # family: JetBrains Mono
-    # family: Hack Nerd Font Mono
+    family: Hack Nerd Font Mono
     # family: Cozette
     # family: spectrum berry
     # family: Hack

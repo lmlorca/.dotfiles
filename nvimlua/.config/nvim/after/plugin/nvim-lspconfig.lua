@@ -50,5 +50,13 @@ for _, server in pairs(servers) do
     config = require('lsp/typescript')()
   end
 
+  if (server == 'css') then
+    config = require('lsp/css')(on_attach)
+  end
+
+  if (server == 'html') then
+    config = require('lsp/html')(on_attach)
+  end
+
   require'lspconfig'[server].setup(config)
 end

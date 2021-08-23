@@ -131,6 +131,7 @@ map('n', '<C-f>', "<cmd>lua require('telescope.builtin').find_files({ no_ignore 
 map('n', '<C-p>', "<cmd>lua require('telescope.builtin').git_files()<cr>")
 map('n', '<C-g>', "<cmd>lua require('telescope.builtin').live_grep()<cr>")
 map('n', 'gd', "<cmd>lua require('telescope.builtin').lsp_definitions()<cr>")
+map('n', 'gi', "<cmd>lua require('telescope.builtin').lsp_implementations()<cr>")
 map('n', 'gr', "<cmd>lua require('telescope.builtin').lsp_references()<cr>")
 map('n', 'gs', "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>")
 map('n', '<C-a>', "<cmd>lua require('telescope.builtin').lsp_code_actions()<cr>")

@@ -20,3 +20,6 @@ require'colorizer'.setup()
 
 -- luatab
 vim.o.tabline = '%!v:lua.require\'luatab\'.tabline()'
+
+-- vim-sneak
+vim.cmd('highlight link Sneak Normal')

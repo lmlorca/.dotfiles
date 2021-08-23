@@ -11,6 +11,7 @@ c = {
 
 b16.setup(c)
 
+b16.highlight.TSConstructor = { guifg = c.base0A, guibg = nil, gui = 'none', guisp = nil  }
 b16.highlight.TSOperator = { guifg = c.base0C, guibg = nil, gui = 'none', guisp = nil  }
 b16.highlight.TSPunctBracket = { guifg = c.base04, guibg = nil, gui = 'none', guisp = nil  }
 b16.highlight.TSPunctDelimiter = { guifg = c.base04, guibg = nil, gui = 'none', guisp = nil  }
@@ -20,7 +21,6 @@ b16.highlight.TSTagDelimiter = { guifg = c.base04, guibg = nil, gui = 'none', gu
 b16.highlight.LineNr = { guifg = c.base02, guibg = nil, gui = 'none', guisp = nil  }
 b16.highlight.CompeDocumentation = { guifg = c.base0C, guibg = nil, gui = 'none', guisp = nil  }
 b16.highlight.PMenuSel = { guifg = c.base00, guibg = c.base0C, gui = 'none', guisp = nil  }
-b16.highlight.Sneak = { guifg = c.base00, guibg = c.base0C, gui = 'none', guisp = nil  }
 
 -- monokai pro 16
 --local monokai_pro_16 = {

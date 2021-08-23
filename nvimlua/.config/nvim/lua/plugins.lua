@@ -23,6 +23,7 @@ require('packer').startup(
     use 'norcalli/nvim-colorizer.lua'
     use 'tpope/vim-commentary'
     use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use 'hrsh7th/vim-vsnip'
 
     -- Navigation
     use {
