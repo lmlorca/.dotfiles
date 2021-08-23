@@ -194,9 +194,9 @@ set $default_gaps 0
 gaps inner $default_gaps
 
 mode "Gaps" {
-    bindsym plus  gaps inner all plus 5
-        bindsym minus gaps inner all minus 5
-        bindsym 0     gaps inner all set $default_gaps
+        bindsym $mod+k  gaps inner all plus 5
+        bindsym $mod+j  gaps inner all minus 5
+        bindsym 0       gaps inner all set $default_gaps
         bindsym Return mode "$mode_gaps"
         bindsym Escape mode "default"
         bindsym $mod+g mode "default"

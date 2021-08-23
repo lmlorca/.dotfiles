@@ -17,3 +17,6 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
 
 -- nvim-colorizer
 require'colorizer'.setup()
+
+-- luatab
+vim.o.tabline = '%!v:lua.require\'luatab\'.tabline()'

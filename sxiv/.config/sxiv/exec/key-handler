@@ -1,0 +1,13 @@
+#!/bin/sh
+while read file
+do
+  case "$1" in
+  "w")
+    FILE_ABSOLUTE="$(pwd)/$file"
+    # wal --saturate .5 -i "$file" ;;
+    $HOME/.scripts/dark "$file" ;;
+    # cp $FILE_ABSOLUTE $HOME/.cache/wallpaper &&
+    # swaymsg output "*" background $HOME/.cache/wallpaper fill &&
+    # gsettings set org.gnome.desktop.background picture-uri "file://$FILE_ABSOLUTE" ;;
+  esac
+done

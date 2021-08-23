@@ -95,6 +95,7 @@ plugins=(
   # zsh-interactive-cd
   zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -132,6 +133,7 @@ source $ZSH/oh-my-zsh.sh
 # alias vim=nvim
 alias yaru=~/.scripts/yaru
 alias update='yay --editmenu -Syyuu'
+alias nvimconf='cd ~/.config/nvim && nvim init.lua'
 
 # Set Neovim as default editor
 export VISUAL=nvim

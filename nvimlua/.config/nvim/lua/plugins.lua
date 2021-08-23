@@ -39,6 +39,7 @@ require('packer').startup(
     use 'karb94/neoscroll.nvim'
 
     -- Aesthetic
+    use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
     use 'lukas-reineke/indent-blankline.nvim'
     use 'RRethy/nvim-base16'
     use {
