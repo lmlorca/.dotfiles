@@ -18,6 +18,7 @@ set.ignorecase = true
 set.smartcase = true
 
 set.autoindent = true
+set.colorcolumn = '80'
 set.expandtab = true
 set.shiftwidth = 2
 set.smarttab = true
