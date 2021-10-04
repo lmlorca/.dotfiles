@@ -2,8 +2,16 @@ local b16 = require('base16-colorscheme')
 local c
 
 --nord
+-- c = {
+--     base00 = '#1e1e1e', base01 = '#212121', base02 = '#333333', base03 = '#545454',
+--     base04 = '#686868', base05 = '#e5e9f0', base06 = '#eceff4', base07 = '#8fbcbb',
+--     base08 = '#bf616a', base09 = '#d08770', base0A = '#ebcb8b', base0B = '#a3be8c',
+--     base0C = '#88c0d0', base0D = '#81a1c1', base0E = '#b48ead', base0F = '#5e81ac'
+-- }
+
+--nord black
 c = {
-    base00 = '#1e1e1e', base01 = '#212121', base02 = '#333333', base03 = '#545454',
+    base00 = '#000000', base01 = '#212121', base02 = '#333333', base03 = '#545454',
     base04 = '#686868', base05 = '#e5e9f0', base06 = '#eceff4', base07 = '#8fbcbb',
     base08 = '#bf616a', base09 = '#d08770', base0A = '#ebcb8b', base0B = '#a3be8c',
     base0C = '#88c0d0', base0D = '#81a1c1', base0E = '#b48ead', base0F = '#5e81ac'
