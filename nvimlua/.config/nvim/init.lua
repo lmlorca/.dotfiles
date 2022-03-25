@@ -65,3 +65,32 @@ map('n', '<C-A-h>', ':vertical resize -10<CR>')
 map('n', '<C-A-j>', ':resize +10<CR>')
 map('n', '<C-A-k>', ':resize -10<CR>')
 map('n', '<C-A-l>', ':vertical resize +10<CR>')
+
+-- Color Scheme
+
+-- Set the theme style
+vim.g.material_style = 'darker'
+
+require('material').setup({
+	contrast = {
+		sidebars = true,
+		cursor_line = true,
+	},
+	italics = {
+		comments = true,
+		functions = true,
+	},
+	contrast_filetypes = {
+		"terminal",
+		"packer",
+		"qf",
+	},
+	disable = {
+		borders = true,
+		eob_lines = true
+	},
+	lualine_style = 'stealth'
+})
+
+-- Enable the colorscheme
+vim.cmd 'colorscheme material'

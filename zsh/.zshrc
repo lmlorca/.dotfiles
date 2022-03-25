@@ -136,6 +136,7 @@ alias update='yay --editmenu -Syyuu'
 alias nvimconf='cd ~/.config/nvim && nvim init.lua'
 alias dots='cd ~/.dotfiles && nvim'
 alias tbc='nvim ~/Dropbox/tbc.md'
+alias btw=neofetch
 
 # Set Neovim as default editor
 export VISUAL=nvim
