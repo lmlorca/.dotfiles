@@ -18,7 +18,7 @@ export PF_ASCII=$PF_DISTRO[$PF_DISTRO_RANDOM]
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/lmlorca/.oh-my-zsh"
+export ZSH="/Users/lmlorca/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -136,13 +136,21 @@ alias update='yay --editmenu -Syyuu'
 alias nvimconf='cd ~/.config/nvim && nvim init.lua'
 alias dots='cd ~/.dotfiles && nvim'
 alias tbc='nvim ~/Dropbox/tbc.md'
+alias matrix='cmatrix -ba -u 1'
 
 # Set Neovim as default editor
 export VISUAL=nvim
 export EDITOR=nvim
 
 # Android
-export ANDROID_HOME=$HOME/Android/Sdk
+# export ANDROID_HOME=$HOME/Android/Sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# MacOS Android``
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
