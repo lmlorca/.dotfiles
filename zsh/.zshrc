@@ -137,6 +137,7 @@ alias nvimconf='cd ~/.config/nvim && nvim init.lua'
 alias dots='cd ~/.dotfiles && nvim'
 alias tbc='nvim ~/Dropbox/tbc.md'
 alias matrix='cmatrix -ba -u 1'
+alias btw=neofetch
 
 # Set Neovim as default editor
 export VISUAL=nvim

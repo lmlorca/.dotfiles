@@ -13,8 +13,12 @@ require('packer').startup(
     use 'nvim-treesitter/playground'
 
     -- LSP
-    use 'neovim/nvim-lspconfig'
-    use 'kabouzeid/nvim-lspinstall'
+    -- use 'neovim/nvim-lspconfig'
+    -- use 'kabouzeid/nvim-lspinstall'
+    use {
+        'neovim/nvim-lspconfig',
+        'williamboman/nvim-lsp-installer',
+    }
 
     -- Completion
     use 'hrsh7th/nvim-compe'
@@ -43,7 +47,10 @@ require('packer').startup(
     -- Aesthetic
     use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
     use 'lukas-reineke/indent-blankline.nvim'
-    use 'RRethy/nvim-base16'
+    use 'sainnhe/sonokai'
+    use 'christianchiarulli/nvcode-color-schemes.vim'
+    use 'marko-cerovac/material.nvim'
+    -- use 'RRethy/nvim-base16'
     use {
       'hoob3rt/lualine.nvim',
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
