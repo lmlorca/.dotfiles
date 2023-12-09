@@ -138,6 +138,7 @@ alias dots='cd ~/.dotfiles && nvim'
 alias tbc='nvim ~/Dropbox/tbc.md'
 alias matrix='cmatrix -ba -u 1'
 alias btw=neofetch
+alias hx=helix
 
 # Set Neovim as default editor
 export VISUAL=nvim
@@ -169,9 +170,9 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 # To apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # man color
 function man() {
@@ -194,3 +195,8 @@ fi
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+# pnpm
+export PNPM_HOME="/home/lmlorca/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
