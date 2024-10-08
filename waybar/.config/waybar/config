@@ -1,71 +1,82 @@
 {
-    "layer": "bottom",
-    "position": "top",
-    // "height": 25,
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
-    "modules-center": [],
-    "modules-right": ["custom/language", "memory", "cpu", "pulseaudio","clock", "tray"],
-    "sway/workspaces": {
-        "format": "{name}"
+  "layer": "top",
+  "position": "top",
+  // "height": 25,
+  // ["sway/workspaces", "sway/mode", "sway/window"],
+  "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/window"],
+  "modules-center": [],
+  "modules-right": [
+    "custom/language",
+    "memory",
+    "cpu",
+    "pulseaudio",
+    "clock",
+    "tray",
+  ],
+  "hyprland/workspaces": {
+    "format": "{name}",
+  },
+  "hyprland/window": {
+    "max-length": 50,
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "persistent-workspaces": {
+      "0": ["DP-3"],
+      "1": ["DP-2"],
+      "2": ["DP-2"],
+      "3": ["DP-2"],
     },
-    "sway/window": {
-        "max-length": 50
+  },
+  //"custom/language": {
+  //"exec": "swaymsg -t get_inputs | jq -r '.[] | select(.identifier == \"1133:49978:Logitech_G413_Carbon_Mechanical_Gaming_Keyboard\") | .xkb_active_layout_name' | head -n 1",
+  //"return-type": "string",
+  //"interval": 1,
+  //"format": "{}"
+  //},
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+  },
+  "clock": {
+    "format-alt": "{:%a, %d. %b  %H:%M}",
+  },
+  "tray": {
+    "spacing": 14,
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "{}% ",
+    "max-length": 10,
+    "on-click-right": "gnome-system-monitor",
+  },
+  "memory": {
+    "interval": 30,
+    "format": "{}% ",
+    "max-length": 10,
+    "on-click-right": "gnome-system-monitor",
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""],
     },
-    "sway/language": {
-        "format": "{}"
-    },
-    "custom/language": {
-        "exec": "swaymsg -t get_inputs | jq -r '.[] | select(.identifier == \"1133:49978:Logitech_G413_Carbon_Mechanical_Gaming_Keyboard\") | .xkb_active_layout_name' | head -n 1",
-        "return-type": "string",
-        "interval": 1,
-        "format": "{}"
-    }
-    ,
-    "battery": {
-        "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
-    },
-    "tray": {
-        "spacing": 14 
-    },
-    "cpu": {
-        "interval": 10,
-        "format": "{}% ",
-        "max-length": 10,
-        "on-click-right": "gnome-system-monitor"
-    },
-    "memory": {
-        "interval": 30,
-        "format": "{}% ",
-        "max-length": 10,
-        "on-click-right": "gnome-system-monitor"
-    },
-    "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "Muted ﱝ",
-        "format-icons": {
-            "headphone": "x",
-            "hands-free": "x",
-            "headset": "x",
-            "phone": "x",
-            "portable": "x",
-            "car": "x",
-            "default": ["奄", "奔", "墳"]
-
-        },
-        "scroll-step": 1,
-        "on-click": "pamixer -t",
-        "on-click-right": "gnome-control-center sound"
-    },
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "icon-theme": "Adwaita",
-        "tooltip-format": "{title}",
-        "on-click": "activate",
-        "on-click-middle": "close"
-    }
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-theme": "Adwaita",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+  },
 }

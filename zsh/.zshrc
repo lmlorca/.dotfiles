@@ -18,7 +18,8 @@ export PF_ASCII=$PF_DISTRO[$PF_DISTRO_RANDOM]
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/lmlorca/.oh-my-zsh"
+# export ZSH="/Users/lmlorca/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -139,6 +140,7 @@ alias tbc='nvim ~/Dropbox/tbc.md'
 alias matrix='cmatrix -ba -u 1'
 alias btw=neofetch
 alias hx=helix
+alias zed=/usr/lib/zed/zed-editor
 
 # Set Neovim as default editor
 export VISUAL=nvim
@@ -196,7 +198,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# pnpm
-export PNPM_HOME="/home/lmlorca/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
+# # pnpm
+# export PNPM_HOME="/home/lmlorca/.local/share/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
+# # pnpm end
