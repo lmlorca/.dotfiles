@@ -1,0 +1,29 @@
+imap jj <esc>
+
+set visualbell
+set noerrorbells
+set clipboard^=unnamed,unnamedplus
+set number
+set relativenumber
+
+nmap j gj
+nmap k gk
+
+nmap gh <Action>(ShowHoverInfo)
+nmap gr <Action>(ShowUsages)
+nmap gD <Action>(GotoImplementation)
+
+nmap <S-k> <C-u>
+nmap <S-j> <C-d>
+
+nmap <C-l> <C-w>l
+nmap <C-h> <C-w>h
+nmap <A-S-j> :tabmove -1<CR>
+nmap <A-S-k> :tabmove +1<CR>
+
+vmap p P
+
+set highlightedyank
+set commentary
+set surround
+set nerdtree
